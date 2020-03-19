@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_schema_attribute_m2m">
     <sys_schema_attribute_m2m action="INSERT_OR_UPDATE">
         <attribute display_value="Edge Encryption Enabled">59f126217f1231009559391ffdfa918c</attribute>
-        <schema display_value="Estado" element="u_slx_estado" name="x_inch_vision_evento">0ef46cd71be70410c83ada83cd4bcbce</schema>
+        <schema display_value="Estado" element="u_slx_estado" name="x_inch_vision_evento">8006c1ea1b4b4410c83ada83cd4bcbf0</schema>
         <sys_class_name>sys_schema_attribute_m2m</sys_class_name>
         <sys_created_by>slx.cj</sys_created_by>
         <sys_created_on>2020-02-26 19:16:56</sys_created_on>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_schema_attribute_m2m">
+    <sys_schema_attribute_m2m action="INSERT_OR_UPDATE">
+        <attribute display_value="Edge Encryption Enabled">59f126217f1231009559391ffdfa918c</attribute>
+        <schema display_value="Orientación" element="u_slx_orientacion_txt" name="x_inch_vision_evento">1c645010db130c102f5861f74b9619ea</schema>
+        <sys_class_name>sys_schema_attribute_m2m</sys_class_name>
+        <sys_created_by>slx.kk</sys_created_by>
+        <sys_created_on>2020-03-02 21:34:09</sys_created_on>
+        <sys_id>5c03daf9db5304102f5861f74b9619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>true</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_update_name>sys_schema_attribute_m2m_5c03daf9db5304102f5861f74b9619f6</sys_update_name>
+        <sys_updated_by>slx.kk</sys_updated_by>
+        <sys_updated_on>2020-03-02 21:34:09</sys_updated_on>
+        <value>true</value>
+    </sys_schema_attribute_m2m>
+</record_update>

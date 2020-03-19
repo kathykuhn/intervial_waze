@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Ruta" max_length="40" name="x_inch_vision_ruta" type="collection">
+    <element label="Poligono de Rutas" max_length="40" name="x_inch_vision_ruta" type="collection">
         <element label="Url de ruta" max_length="1024" name="slx_u_urlruta" type="url"/>
         <element label="Estado" max_length="40" name="u_slx_estado" type="boolean"/>
         <element display="true" label="Nombre" mandatory="true" max_length="40" name="u_slx_nombre" type="string"/>

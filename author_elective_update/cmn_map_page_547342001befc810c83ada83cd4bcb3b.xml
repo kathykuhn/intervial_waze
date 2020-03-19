@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmn_map_page">
+    <cmn_map_page action="DELETE">
+        <center_address>Yogododji, Africa</center_address>
+        <center_latitude>-38.620889</center_latitude>
+        <center_longitude>-72.472091</center_longitude>
+        <controls_size>large</controls_size>
+        <initial_zoom>2</initial_zoom>
+        <name>x_inch_vision_Mapa_Ruta_de_la_Araucania</name>
+        <overview>true</overview>
+        <refresh_on_zoom>true</refresh_on_zoom>
+        <script><![CDATA[//con esta propiedad se obtiene la url de la instancia de servicenow
+var instance = gs.getProperty('glide.servlet.uri');
+
+/*
+se hace un GlideRecord a la tabla de eventos y se recorren todos los eventos 
+pertenecientes a la ruta del maipo
+
+Sin Atención 1
+En Atención	 2
+Irrelevante	 3
+Duplicado	 4
+Completado	 5
+*/
+var p = gs.getProperty('slx.ui.vision.ventana');
+var tiempo = parseInt(p);
+var ventana = new GlideDateTime();
+ventana.addSeconds(-tiempo);
+
+var puntos = new GlideRecord('x_inch_vision_evento');
+puntos.addQuery('u_slx_punto_km.u_slx_ruta','f91c8477db7d83008ddc3c9b7c961944');//sys_id de la company Ruta de la Araucania
+puntos.addQuery('u_slx_estado','IN','1,2');//si el estado es (en atencion) o (sin atencion)
+puntos.addQuery('sys_updated_on','>',ventana.getValue());
+puntos.query();
+while (puntos.next()) {
+	
+	//html que genera el cuadro de dialogo en el mapa con la informacion del evento
+    var recuadro = '';
+    recuadro += '<table style="height: 95px; width: 300px;">';
+    recuadro += '<tbody>';
+    recuadro += '<tr>';
+    recuadro += '<td style="width: 191px;">Tipo Evento:</td>';
+    recuadro += '<td style="width: 200px;">'+puntos.u_slx_tipo.u_slx_nombre+'</td>';
+    recuadro += '<td style="width: 187px;" rowspan="4">&nbsp;</td>';
+    recuadro += '</tr>';
+	recuadro += '<tr>';
+    recuadro += '<td style="width: 191px;">Orientación:</td>';
+    recuadro += '<td style="width: 200px;">'+puntos.u_slx_orientacion_txt+'</td>';
+    recuadro += '<td style="width: 187px;" rowspan="4">&nbsp;</td>';
+    recuadro += '</tr>';
+	recuadro += '<tr>';
+    recuadro += '<td style="width: 191px;">Estado:</td>';
+    recuadro += '<td style="width: 200px;">'+puntos.getDisplayValue('u_slx_estado')+'</td>';
+    recuadro += '<td style="width: 187px;" rowspan="4">&nbsp;</td>';
+    recuadro += '</tr>';
+    recuadro += '<tr>';
+    recuadro += '<td style="width: 191px;">direccion :</td>';
+    recuadro += '<td style="width: 108px;">'+puntos.u_slx_calle+'</td>';
+    recuadro += '</tr>';
+    recuadro += '<tr>';
+    recuadro += '<td style="width: 191px;">Fecha/Hora registrada:</td>';
+    recuadro += '<td style="width: 108px;">'+puntos.u_slx_fecha_hora_registrada+'</td>';
+    recuadro += '</tr>';
+    recuadro += '<tr>';
+    recuadro += '<td style="width: 191px;">Ciudad :</td>';
+    recuadro += '<td style="width: 108px;">'+puntos.u_slx_ciudad+'</td>';
+    recuadro += '</tr>';
+    recuadro += '<tr>';
+    recuadro += '<td style="width: 191px;">V&iacute;a:</td>';
+    recuadro += '<td style="width: 108px;">'+puntos.u_slx_tipo_via+'</td>';
+    recuadro += '</tr>';
+	recuadro += '<tr>';
+    recuadro += '<td style="width: 108px;"><a href="'+instance +'x_inch_vision_evento.do?sys_id='+puntos.sys_id
+		+'">Ver Registro</a></td>';
+    recuadro += '</tr>';
+    recuadro += '</tbody>';
+    recuadro += '</table>';
+
+
+	//se declara el item map que marcara el mapa
+	/*
+	metodo map.addItem() agrega el objeto al mapa
+	*/
+    var item = map.addItem(puntos);
+	//se define la posicion del objeto en el mapa
+    item.latitude = puntos.getValue('u_slx_latitud');
+    item.longitude = puntos.getValue('u_slx_longitud');
+	
+	//se define el recuadro html declarado anteriormente
+    item.html = recuadro;
+
+
+	/*
+	se valida el icono que se mostrara en el mapa dependiendo del tipo de evento.
+	el icono se define con : 
+	instance + "/bluepin_logo_onshoulder@3x.png" 
+	que es igual a decir esto :
+	https://intervialproddev.service-now.com/bluepin_logo_onshoulder@3x.png
+	*/
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'MISC') {
+        item.icon = instance + "/bluepin_logo_onshoulder@3x.png";
+    }else
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'CONSTRUCTION') {
+        item.icon = instance + "/bluepin_logo_construction@3x.png";
+    }else
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'JAM') {
+        item.icon = instance + "/bluepin_logo_traffic@3x.png";
+    }else
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'WEATHERHAZARD / HAZARD') {
+        item.icon = instance + "/bluepin_logo_hazard@3x.png";
+    }else
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'ACCIDENT') {
+        item.icon = instance + "/bluepin_logo_accident@3x.png";
+    }else
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'ROAD_CLOSED') {
+        item.icon = instance + "/bluepin_logo_onshoulder@3x.png";
+    }
+
+	//se define el tamaño del icono mostrado en el mapa
+    item.icon_width = "60";
+    item.icon_height = "60";
+}]]></script>
+        <show_device_location>true</show_device_location>
+        <suffix>Mapa_Ruta_de_la_Araucania</suffix>
+        <sys_class_name>cmn_map_page</sys_class_name>
+        <sys_created_by>slx.kk</sys_created_by>
+        <sys_created_on>2020-03-09 21:00:17</sys_created_on>
+        <sys_id>547342001befc810c83ada83cd4bcb3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_inch_vision_Mapa_Ruta_de_la_Araucania</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_update_name>cmn_map_page_547342001befc810c83ada83cd4bcb3b</sys_update_name>
+        <sys_updated_by>slx.kk</sys_updated_by>
+        <sys_updated_on>2020-03-09 21:00:17</sys_updated_on>
+        <type>normal</type>
+        <type_selection>menu</type_selection>
+    </cmn_map_page>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</application>
+        <file_path/>
+        <instance_id>436cdaecdb7217004c1ff70fbf961917</instance_id>
+        <instance_name>intervialproddev</instance_name>
+        <name>cmn_map_page_547342001befc810c83ada83cd4bcb3b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="cmn_map_page"&gt;&lt;cmn_map_page action="INSERT_OR_UPDATE"&gt;&lt;center_address&gt;Yogododji, Africa&lt;/center_address&gt;&lt;center_latitude&gt;-38.620889&lt;/center_latitude&gt;&lt;center_longitude&gt;-72.472091&lt;/center_longitude&gt;&lt;controls_size&gt;large&lt;/controls_size&gt;&lt;initial_zoom&gt;2&lt;/initial_zoom&gt;&lt;name&gt;x_inch_vision_Mapa_Ruta_de_la_Araucania&lt;/name&gt;&lt;overview&gt;true&lt;/overview&gt;&lt;refresh_on_zoom&gt;true&lt;/refresh_on_zoom&gt;&lt;script&gt;&lt;![CDATA[//con esta propiedad se obtiene la url de la instancia de servicenow
+var instance = gs.getProperty('glide.servlet.uri');
+
+/*
+se hace un GlideRecord a la tabla de eventos y se recorren todos los eventos 
+pertenecientes a la ruta del maipo
+
+Sin Atención 1
+En Atención	 2
+Irrelevante	 3
+Duplicado	 4
+Completado	 5
+*/
+var p = gs.getProperty('slx.ui.vision.ventana');
+var tiempo = parseInt(p);
+var ventana = new GlideDateTime();
+ventana.addSeconds(-tiempo);
+
+var puntos = new GlideRecord('x_inch_vision_evento');
+puntos.addQuery('u_slx_punto_km.u_slx_ruta','f91c8477db7d83008ddc3c9b7c961944');//sys_id de la company Ruta de la Araucania
+puntos.addQuery('u_slx_estado','IN','1,2');//si el estado es (en atencion) o (sin atencion)
+puntos.addQuery('sys_updated_on','&gt;',ventana.getValue());
+puntos.query();
+while (puntos.next()) {
+	
+	//html que genera el cuadro de dialogo en el mapa con la informacion del evento
+    var recuadro = '';
+    recuadro += '&lt;table style="height: 95px; width: 300px;"&gt;';
+    recuadro += '&lt;tbody&gt;';
+    recuadro += '&lt;tr&gt;';
+    recuadro += '&lt;td style="width: 191px;"&gt;Tipo Evento:&lt;/td&gt;';
+    recuadro += '&lt;td style="width: 200px;"&gt;'+puntos.u_slx_tipo.u_slx_nombre+'&lt;/td&gt;';
+    recuadro += '&lt;td style="width: 187px;" rowspan="4"&gt;&amp;nbsp;&lt;/td&gt;';
+    recuadro += '&lt;/tr&gt;';
+	recuadro += '&lt;tr&gt;';
+    recuadro += '&lt;td style="width: 191px;"&gt;Orientación:&lt;/td&gt;';
+    recuadro += '&lt;td style="width: 200px;"&gt;'+puntos.u_slx_orientacion_txt+'&lt;/td&gt;';
+    recuadro += '&lt;td style="width: 187px;" rowspan="4"&gt;&amp;nbsp;&lt;/td&gt;';
+    recuadro += '&lt;/tr&gt;';
+	recuadro += '&lt;tr&gt;';
+    recuadro += '&lt;td style="width: 191px;"&gt;Estado:&lt;/td&gt;';
+    recuadro += '&lt;td style="width: 200px;"&gt;'+puntos.getDisplayValue('u_slx_estado')+'&lt;/td&gt;';
+    recuadro += '&lt;td style="width: 187px;" rowspan="4"&gt;&amp;nbsp;&lt;/td&gt;';
+    recuadro += '&lt;/tr&gt;';
+    recuadro += '&lt;tr&gt;';
+    recuadro += '&lt;td style="width: 191px;"&gt;direccion :&lt;/td&gt;';
+    recuadro += '&lt;td style="width: 108px;"&gt;'+puntos.u_slx_calle+'&lt;/td&gt;';
+    recuadro += '&lt;/tr&gt;';
+    recuadro += '&lt;tr&gt;';
+    recuadro += '&lt;td style="width: 191px;"&gt;Fecha/Hora registrada:&lt;/td&gt;';
+    recuadro += '&lt;td style="width: 108px;"&gt;'+puntos.u_slx_fecha_hora_registrada+'&lt;/td&gt;';
+    recuadro += '&lt;/tr&gt;';
+    recuadro += '&lt;tr&gt;';
+    recuadro += '&lt;td style="width: 191px;"&gt;Ciudad :&lt;/td&gt;';
+    recuadro += '&lt;td style="width: 108px;"&gt;'+puntos.u_slx_ciudad+'&lt;/td&gt;';
+    recuadro += '&lt;/tr&gt;';
+    recuadro += '&lt;tr&gt;';
+    recuadro += '&lt;td style="width: 191px;"&gt;V&amp;iacute;a:&lt;/td&gt;';
+    recuadro += '&lt;td style="width: 108px;"&gt;'+puntos.u_slx_tipo_via+'&lt;/td&gt;';
+    recuadro += '&lt;/tr&gt;';
+	recuadro += '&lt;tr&gt;';
+    recuadro += '&lt;td style="width: 108px;"&gt;&lt;a href="'+instance +'x_inch_vision_evento.do?sys_id='+puntos.sys_id
+		+'"&gt;Ver Registro&lt;/a&gt;&lt;/td&gt;';
+    recuadro += '&lt;/tr&gt;';
+    recuadro += '&lt;/tbody&gt;';
+    recuadro += '&lt;/table&gt;';
+
+
+	//se declara el item map que marcara el mapa
+	/*
+	metodo map.addItem() agrega el objeto al mapa
+	*/
+    var item = map.addItem(puntos);
+	//se define la posicion del objeto en el mapa
+    item.latitude = puntos.getValue('u_slx_latitud');
+    item.longitude = puntos.getValue('u_slx_longitud');
+	
+	//se define el recuadro html declarado anteriormente
+    item.html = recuadro;
+
+
+	/*
+	se valida el icono que se mostrara en el mapa dependiendo del tipo de evento.
+	el icono se define con : 
+	instance + "/bluepin_logo_onshoulder@3x.png" 
+	que es igual a decir esto :
+	https://intervialproddev.service-now.com/bluepin_logo_onshoulder@3x.png
+	*/
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'MISC') {
+        item.icon = instance + "/bluepin_logo_onshoulder@3x.png";
+    }else
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'CONSTRUCTION') {
+        item.icon = instance + "/bluepin_logo_construction@3x.png";
+    }else
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'JAM') {
+        item.icon = instance + "/bluepin_logo_traffic@3x.png";
+    }else
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'WEATHERHAZARD / HAZARD') {
+        item.icon = instance + "/bluepin_logo_hazard@3x.png";
+    }else
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'ACCIDENT') {
+        item.icon = instance + "/bluepin_logo_accident@3x.png";
+    }else
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'ROAD_CLOSED') {
+        item.icon = instance + "/bluepin_logo_onshoulder@3x.png";
+    }
+
+	//se define el tamaño del icono mostrado en el mapa
+    item.icon_width = "60";
+    item.icon_height = "60";
+}]]&gt;&lt;/script&gt;&lt;show_device_location&gt;true&lt;/show_device_location&gt;&lt;suffix&gt;Mapa_Ruta_de_la_Araucania&lt;/suffix&gt;&lt;sys_class_name&gt;cmn_map_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;slx.kk&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-09 21:00:17&lt;/sys_created_on&gt;&lt;sys_id&gt;547342001befc810c83ada83cd4bcb3b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_inch_vision_Mapa_Ruta_de_la_Araucania&lt;/sys_name&gt;&lt;sys_package display_value="vision" source="x_inch_vision"&gt;30a46a431b6a4050c83ada83cd4bcba5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="vision"&gt;30a46a431b6a4050c83ada83cd4bcba5&lt;/sys_scope&gt;&lt;sys_update_name&gt;cmn_map_page_547342001befc810c83ada83cd4bcb3b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;slx.kk&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-09 21:00:17&lt;/sys_updated_on&gt;&lt;type&gt;normal&lt;/type&gt;&lt;type_selection&gt;menu&lt;/type_selection&gt;&lt;/cmn_map_page&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1077922475</payload_hash>
+        <record_name>x_inch_vision_Mapa_Ruta_de_la_Araucania</record_name>
+        <reverted_from/>
+        <source>f8a46a431b6a4050c83ada83cd4bcba7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>slx.kk</sys_created_by>
+        <sys_created_on>2020-03-09 21:00:18</sys_created_on>
+        <sys_id>e46e428c1befc810c83ada83cd4bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>170c1192fc10000001</sys_recorded_at>
+        <sys_updated_by>slx.kk</sys_updated_by>
+        <sys_updated_on>2020-03-09 21:00:18</sys_updated_on>
+        <type>Map Page</type>
+        <update_guid>ec6e428cfaefc810d0a181671f600bd1</update_guid>
+        <update_guid_history>ec6e428cfaefc810d0a181671f600bd1:1077922475</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 09-03-2020 18:03:41">122f868c1befc810c83ada83cd4bcbc8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>slx.kk</sys_created_by>
+        <sys_created_on>2020-03-09 21:03:41</sys_created_on>
+        <sys_db_object display_value="" name="cmn_map_page">cmn_map_page</sys_db_object>
+        <sys_id>33cda964a5934b109a07e338a6c2d100</sys_id>
+        <sys_metadata>547342001befc810c83ada83cd4bcb3b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_inch_vision_Mapa_Ruta_de_la_Araucania</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_scope_delete display_value="">2d7faeeae838452089d4e82de17ae840</sys_scope_delete>
+        <sys_update_name>cmn_map_page_547342001befc810c83ada83cd4bcb3b</sys_update_name>
+        <sys_update_version display_value="cmn_map_page_547342001befc810c83ada83cd4bcb3b">e46e428c1befc810c83ada83cd4bcbd2</sys_update_version>
+        <sys_updated_by>slx.kk</sys_updated_by>
+        <sys_updated_on>2020-03-09 21:03:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

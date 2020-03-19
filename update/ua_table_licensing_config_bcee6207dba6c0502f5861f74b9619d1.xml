@@ -4,22 +4,22 @@
         <license_condition/>
         <license_model>none</license_model>
         <license_roles/>
-        <name>u_imp_tmpl_x_inch_vision_punto_kilometrico</name>
+        <name>x_inch_vision_punto_kilometrico</name>
         <op_delete>true</op_delete>
         <op_insert>true</op_insert>
         <op_update>true</op_update>
         <owner_condition/>
         <sys_class_name>ua_table_licensing_config</sys_class_name>
-        <sys_created_by>slx.cj</sys_created_by>
-        <sys_created_on>2020-02-12 18:53:39</sys_created_on>
-        <sys_id>b9f46cd71be70410c83ada83cd4bcb98</sys_id>
+        <sys_created_by>slx.mb</sys_created_by>
+        <sys_created_on>2020-01-29 14:01:18</sys_created_on>
+        <sys_id>bcee6207dba6c0502f5861f74b9619d1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>u_imp_tmpl_x_inch_vision_punto_kilometrico</sys_name>
+        <sys_name>x_inch_vision_punto_kilometrico</sys_name>
         <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
         <sys_policy/>
         <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
-        <sys_update_name>ua_table_licensing_config_b9f46cd71be70410c83ada83cd4bcb98</sys_update_name>
-        <sys_updated_by>slx.cj</sys_updated_by>
-        <sys_updated_on>2020-02-12 18:53:39</sys_updated_on>
+        <sys_update_name>ua_table_licensing_config_bcee6207dba6c0502f5861f74b9619d1</sys_update_name>
+        <sys_updated_by>slx.mb</sys_updated_by>
+        <sys_updated_on>2020-01-29 14:01:18</sys_updated_on>
     </ua_table_licensing_config>
 </record_update>

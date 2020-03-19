@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_inch_vision.slx_timers_eventos</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>slx_timers_eventos</name>
+        <script><![CDATA[var slx_timers_eventos = Class.create();
+slx_timers_eventos.prototype = {
+    initialize: function() {
+    },
+
+    type: 'slx_timers_eventos'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-02-27 19:43:40</sys_created_on>
+        <sys_id>82435524db534c102f5861f74b961966</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>slx_timers_eventos</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_update_name>sys_script_include_82435524db534c102f5861f74b961966</sys_update_name>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-02-27 19:43:40</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</application>
+        <file_path/>
+        <instance_id>436cdaecdb7217004c1ff70fbf961917</instance_id>
+        <instance_name>intervialproddev</instance_name>
+        <name>sys_script_include_82435524db534c102f5861f74b961966</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_inch_vision.slx_timers_eventos&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;slx_timers_eventos&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var slx_timers_eventos = Class.create();
+slx_timers_eventos.prototype = {
+    initialize: function() {
+    },
+
+    type: 'slx_timers_eventos'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;slx.cj&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-02-27 19:43:40&lt;/sys_created_on&gt;&lt;sys_id&gt;82435524db534c102f5861f74b961966&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;slx_timers_eventos&lt;/sys_name&gt;&lt;sys_package display_value="vision" source="x_inch_vision"&gt;30a46a431b6a4050c83ada83cd4bcba5&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="vision"&gt;30a46a431b6a4050c83ada83cd4bcba5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_82435524db534c102f5861f74b961966&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;slx.cj&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-02-27 19:43:40&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-803677370</payload_hash>
+        <record_name>slx_timers_eventos</record_name>
+        <reverted_from/>
+        <source>f8a46a431b6a4050c83ada83cd4bcba7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-02-27 19:43:40</sys_created_on>
+        <sys_id>b2539524db534c102f5861f74b9619ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>170882d135c0000001</sys_recorded_at>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-02-27 19:43:40</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>7a5395248b534c10a8f8774118ffdeec</update_guid>
+        <update_guid_history>7a5395248b534c10a8f8774118ffdeec:-803677370</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-02-28 15:48:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>6dadf899e1254db291090a74d1724544</sys_id>
+        <sys_metadata>82435524db534c102f5861f74b961966</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>slx_timers_eventos</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_scope_delete display_value="">2d7faeeae838452089d4e82de17ae840</sys_scope_delete>
+        <sys_update_name>sys_script_include_82435524db534c102f5861f74b961966</sys_update_name>
+        <sys_update_version display_value="sys_script_include_82435524db534c102f5861f74b961966">b2539524db534c102f5861f74b9619ed</sys_update_version>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-02-28 15:48:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

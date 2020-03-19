@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Vision">d317f60fdba6c0502f5861f74b9619af</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_app_module/>
+        <mobile_title>Tipos de incidentes</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_inch_vision_tipo_incidente</name>
+        <order>3</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>slx.mb</sys_created_by>
+        <sys_created_on>2020-01-29 14:41:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f608f24fdba6c0502f5861f74b96197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tipos de incidentes</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_update_name>sys_app_module_f608f24fdba6c0502f5861f74b96197a</sys_update_name>
+        <sys_updated_by>slx.mb</sys_updated_by>
+        <sys_updated_on>2020-01-29 14:41:52</sys_updated_on>
+        <timeline_page/>
+        <title>Tipos de incidentes</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <view_on_mobile>false</view_on_mobile>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</application>
+        <file_path/>
+        <instance_id>436cdaecdb7217004c1ff70fbf961917</instance_id>
+        <instance_name>intervialproddev</instance_name>
+        <name>sys_app_module_f608f24fdba6c0502f5861f74b96197a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Vision">d317f60fdba6c0502f5861f74b9619af</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_app_module/><mobile_title>Tipos de incidentes</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_inch_vision_tipo_incidente</name><order>3</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>slx.mb</sys_created_by><sys_created_on>2020-01-29 14:41:52</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>f608f24fdba6c0502f5861f74b96197a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Tipos de incidentes</sys_name><sys_overrides/><sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package><sys_policy/><sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope><sys_update_name>sys_app_module_f608f24fdba6c0502f5861f74b96197a</sys_update_name><sys_updated_by>slx.mb</sys_updated_by><sys_updated_on>2020-01-29 14:41:52</sys_updated_on><timeline_page/><title>Tipos de incidentes</title><uncancelable>false</uncancelable><view_name/><view_on_mobile>false</view_on_mobile><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>243995969</payload_hash>
+        <record_name>Tipos de incidentes</record_name>
+        <reverted_from/>
+        <source>f8a46a431b6a4050c83ada83cd4bcba7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>slx.mb</sys_created_by>
+        <sys_created_on>2020-01-29 14:41:52</sys_created_on>
+        <sys_id>13287acbdba6c0502f5861f74b9619ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16ff1c05b310000001</sys_recorded_at>
+        <sys_updated_by>slx.mb</sys_updated_by>
+        <sys_updated_on>2020-01-29 14:41:52</sys_updated_on>
+        <type>Module</type>
+        <update_guid>1b287acb09a6c050af8369c0cfc694ad</update_guid>
+        <update_guid_history>1b287acb09a6c050af8369c0cfc694ad:243995969</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 28-02-2020 12:58:42">4d79a1fc1bd74010c83ada83cd4bcb4f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-02-28 15:58:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>06e2c127283743d7805cb214922c52b1</sys_id>
+        <sys_metadata>f608f24fdba6c0502f5861f74b96197a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tipos de incidentes</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_scope_delete display_value="">2d7faeeae838452089d4e82de17ae840</sys_scope_delete>
+        <sys_update_name>sys_app_module_f608f24fdba6c0502f5861f74b96197a</sys_update_name>
+        <sys_update_version display_value="sys_app_module_f608f24fdba6c0502f5861f74b96197a">13287acbdba6c0502f5861f74b9619ae</sys_update_version>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-02-28 15:58:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -53,15 +53,15 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>slx.mb</sys_created_by>
         <sys_created_on>2020-01-29 13:25:53</sys_created_on>
-        <sys_id>b1f46cd71be70410c83ada83cd4bcb58</sys_id>
+        <sys_id>8ec626cbdb66c0502f5861f74b961952</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_inch_vision_ruta</sys_name>
         <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
         <sys_policy/>
         <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
-        <sys_update_name>sys_dictionary_x_inch_vision_ruta_NULL</sys_update_name>
-        <sys_updated_by>slx.cj</sys_updated_by>
-        <sys_updated_on>2020-03-19 15:40:06</sys_updated_on>
+        <sys_update_name>sys_dictionary_x_inch_vision_ruta_null</sys_update_name>
+        <sys_updated_by>slx.mb</sys_updated_by>
+        <sys_updated_on>2020-01-29 13:25:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

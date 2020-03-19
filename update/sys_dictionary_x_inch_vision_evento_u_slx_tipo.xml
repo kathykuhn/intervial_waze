@@ -38,7 +38,7 @@
         <name>x_inch_vision_evento</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>false</read_only>
+        <read_only>true</read_only>
         <read_roles/>
         <reference display_value="" name="x_inch_vision_tipo_incidente">x_inch_vision_tipo_incidente</reference>
         <reference_cascade_rule/>
@@ -55,15 +55,15 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>slx.cj</sys_created_by>
         <sys_created_on>2020-02-13 19:05:21</sys_created_on>
-        <sys_id>42f46cd71be70410c83ada83cd4bcbda</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_id>b93489c8db4704902f5861f74b96192d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Tipo</sys_name>
         <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
         <sys_policy/>
         <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
         <sys_update_name>sys_dictionary_x_inch_vision_evento_u_slx_tipo</sys_update_name>
         <sys_updated_by>slx.cj</sys_updated_by>
-        <sys_updated_on>2020-03-19 15:40:05</sys_updated_on>
+        <sys_updated_on>2020-02-28 15:47:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

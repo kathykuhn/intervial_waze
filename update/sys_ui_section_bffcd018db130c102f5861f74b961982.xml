@@ -3,56 +3,70 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_slx_tiempo_alerta</element>
             <position>0</position>
-            <sys_created_by>slx.cj</sys_created_by>
-            <sys_created_on>2020-02-26 21:07:41</sys_created_on>
-            <sys_id>f3fc1418db130c102f5861f74b961906</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-06 13:01:33</sys_created_on>
+            <sys_id>a2040987dbd308102f5861f74b96196a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Tiempos Registrados" display_value="Tiempos Registrados" name="x_inch_vision_evento" sys_domain="global" view="Default view">bffcd018db130c102f5861f74b961982</sys_ui_section>
-            <sys_updated_by>slx.cj</sys_updated_by>
-            <sys_updated_on>2020-02-26 21:07:41</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-06 13:01:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_updated_on</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-06 13:01:34</sys_created_on>
+            <sys_id>6a040987dbd308102f5861f74b96196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Tiempos Registrados" display_value="Tiempos Registrados" name="x_inch_vision_evento" sys_domain="global" view="Default view">bffcd018db130c102f5861f74b961982</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-06 13:01:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>1</position>
-            <sys_created_by>slx.cj</sys_created_by>
-            <sys_created_on>2020-02-26 21:07:41</sys_created_on>
-            <sys_id>7bfc1418db130c102f5861f74b961906</sys_id>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-06 13:01:34</sys_created_on>
+            <sys_id>ea040987dbd308102f5861f74b96196a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Tiempos Registrados" display_value="Tiempos Registrados" name="x_inch_vision_evento" sys_domain="global" view="Default view">bffcd018db130c102f5861f74b961982</sys_ui_section>
-            <sys_updated_by>slx.cj</sys_updated_by>
-            <sys_updated_on>2020-02-26 21:07:41</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-06 13:01:34</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_slx_tiempo_atendido</element>
-            <position>2</position>
-            <sys_created_by>slx.cj</sys_created_by>
-            <sys_created_on>2020-02-26 21:07:41</sys_created_on>
-            <sys_id>fffc1418db130c102f5861f74b961906</sys_id>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-06 13:01:34</sys_created_on>
+            <sys_id>6e040987dbd308102f5861f74b96196a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Tiempos Registrados" display_value="Tiempos Registrados" name="x_inch_vision_evento" sys_domain="global" view="Default view">bffcd018db130c102f5861f74b961982</sys_ui_section>
-            <sys_updated_by>slx.cj</sys_updated_by>
-            <sys_updated_on>2020-02-26 21:07:41</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-06 13:01:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_slx_tiempo_noatendido</element>
-            <position>3</position>
-            <sys_created_by>slx.cj</sys_created_by>
-            <sys_created_on>2020-02-26 21:07:41</sys_created_on>
-            <sys_id>77fc1418db130c102f5861f74b961907</sys_id>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-03-06 13:01:34</sys_created_on>
+            <sys_id>ee040987dbd308102f5861f74b96196a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Tiempos Registrados" display_value="Tiempos Registrados" name="x_inch_vision_evento" sys_domain="global" view="Default view">bffcd018db130c102f5861f74b961982</sys_ui_section>
-            <sys_updated_by>slx.cj</sys_updated_by>
-            <sys_updated_on>2020-02-26 21:07:41</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-03-06 13:01:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

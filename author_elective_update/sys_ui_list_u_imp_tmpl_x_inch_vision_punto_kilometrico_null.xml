@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list action="DELETE" parent="" relationship="" sys_domain="global" table="u_imp_tmpl_x_inch_vision_punto_kilometrico" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_import_row</element>
+            <list_id display_value="u_imp_tmpl_x_inch_vision_punto_kilometrico" element="NULL" name="u_imp_tmpl_x_inch_vision_punto_kilometrico" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c018b7671b720090c83ada83cd4bcb97</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>slx.cj</sys_created_by>
+            <sys_created_on>2020-02-12 18:53:39</sys_created_on>
+            <sys_id>8418b7671b720090c83ada83cd4bcb97</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>slx.cj</sys_updated_by>
+            <sys_updated_on>2020-02-12 18:53:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_import_set</element>
+            <list_id display_value="u_imp_tmpl_x_inch_vision_punto_kilometrico" element="NULL" name="u_imp_tmpl_x_inch_vision_punto_kilometrico" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c018b7671b720090c83ada83cd4bcb97</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>slx.cj</sys_created_by>
+            <sys_created_on>2020-02-12 18:53:39</sys_created_on>
+            <sys_id>0818b7671b720090c83ada83cd4bcb97</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>slx.cj</sys_updated_by>
+            <sys_updated_on>2020-02-12 18:53:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_import_state</element>
+            <list_id display_value="u_imp_tmpl_x_inch_vision_punto_kilometrico" element="NULL" name="u_imp_tmpl_x_inch_vision_punto_kilometrico" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c018b7671b720090c83ada83cd4bcb97</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>slx.cj</sys_created_by>
+            <sys_created_on>2020-02-12 18:53:39</sys_created_on>
+            <sys_id>8818b7671b720090c83ada83cd4bcb97</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>slx.cj</sys_updated_by>
+            <sys_updated_on>2020-02-12 18:53:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_target_table</element>
+            <list_id display_value="u_imp_tmpl_x_inch_vision_punto_kilometrico" element="NULL" name="u_imp_tmpl_x_inch_vision_punto_kilometrico" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c018b7671b720090c83ada83cd4bcb97</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>slx.cj</sys_created_by>
+            <sys_created_on>2020-02-12 18:53:39</sys_created_on>
+            <sys_id>0c18b7671b720090c83ada83cd4bcb97</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>slx.cj</sys_updated_by>
+            <sys_updated_on>2020-02-12 18:53:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_target_sys_id</element>
+            <list_id display_value="u_imp_tmpl_x_inch_vision_punto_kilometrico" element="NULL" name="u_imp_tmpl_x_inch_vision_punto_kilometrico" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c018b7671b720090c83ada83cd4bcb97</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>slx.cj</sys_created_by>
+            <sys_created_on>2020-02-12 18:53:39</sys_created_on>
+            <sys_id>8c18b7671b720090c83ada83cd4bcb97</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>slx.cj</sys_updated_by>
+            <sys_updated_on>2020-02-12 18:53:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_row_error</element>
+            <list_id display_value="u_imp_tmpl_x_inch_vision_punto_kilometrico" element="NULL" name="u_imp_tmpl_x_inch_vision_punto_kilometrico" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c018b7671b720090c83ada83cd4bcb97</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>slx.cj</sys_created_by>
+            <sys_created_on>2020-02-12 18:53:40</sys_created_on>
+            <sys_id>0018b7671b720090c83ada83cd4bcb98</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>slx.cj</sys_updated_by>
+            <sys_updated_on>2020-02-12 18:53:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>u_imp_tmpl_x_inch_vision_punto_kilometrico</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>slx.cj</sys_created_by>
+            <sys_created_on>2020-02-12 18:53:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c018b7671b720090c83ada83cd4bcb97</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_imp_tmpl_x_inch_vision_punto_kilometrico</sys_name>
+            <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+            <sys_update_name>sys_ui_list_u_imp_tmpl_x_inch_vision_punto_kilometrico_null</sys_update_name>
+            <sys_updated_by>slx.cj</sys_updated_by>
+            <sys_updated_on>2020-02-12 18:53:39</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</application>
+        <file_path/>
+        <instance_id>436cdaecdb7217004c1ff70fbf961917</instance_id>
+        <instance_name>intervialproddev</instance_name>
+        <name>sys_ui_list_u_imp_tmpl_x_inch_vision_punto_kilometrico_null</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="u_imp_tmpl_x_inch_vision_punto_kilometrico" version="2" view=""><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>sys_import_row</element><list_id display_value="u_imp_tmpl_x_inch_vision_punto_kilometrico" element="NULL" name="u_imp_tmpl_x_inch_vision_punto_kilometrico" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c018b7671b720090c83ada83cd4bcb97</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>slx.cj</sys_created_by><sys_created_on>2020-02-12 18:53:39</sys_created_on><sys_id>8418b7671b720090c83ada83cd4bcb97</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>slx.cj</sys_updated_by><sys_updated_on>2020-02-12 18:53:39</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>sys_import_set</element><list_id display_value="u_imp_tmpl_x_inch_vision_punto_kilometrico" element="NULL" name="u_imp_tmpl_x_inch_vision_punto_kilometrico" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c018b7671b720090c83ada83cd4bcb97</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>slx.cj</sys_created_by><sys_created_on>2020-02-12 18:53:39</sys_created_on><sys_id>0818b7671b720090c83ada83cd4bcb97</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>slx.cj</sys_updated_by><sys_updated_on>2020-02-12 18:53:39</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>sys_import_state</element><list_id display_value="u_imp_tmpl_x_inch_vision_punto_kilometrico" element="NULL" name="u_imp_tmpl_x_inch_vision_punto_kilometrico" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c018b7671b720090c83ada83cd4bcb97</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>slx.cj</sys_created_by><sys_created_on>2020-02-12 18:53:39</sys_created_on><sys_id>8818b7671b720090c83ada83cd4bcb97</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>slx.cj</sys_updated_by><sys_updated_on>2020-02-12 18:53:39</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>sys_target_table</element><list_id display_value="u_imp_tmpl_x_inch_vision_punto_kilometrico" element="NULL" name="u_imp_tmpl_x_inch_vision_punto_kilometrico" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c018b7671b720090c83ada83cd4bcb97</list_id><max_value>false</max_value><min_value>false</min_value><position>3</position><sum>false</sum><sys_created_by>slx.cj</sys_created_by><sys_created_on>2020-02-12 18:53:39</sys_created_on><sys_id>0c18b7671b720090c83ada83cd4bcb97</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>slx.cj</sys_updated_by><sys_updated_on>2020-02-12 18:53:39</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>sys_target_sys_id</element><list_id display_value="u_imp_tmpl_x_inch_vision_punto_kilometrico" element="NULL" name="u_imp_tmpl_x_inch_vision_punto_kilometrico" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c018b7671b720090c83ada83cd4bcb97</list_id><max_value>false</max_value><min_value>false</min_value><position>4</position><sum>false</sum><sys_created_by>slx.cj</sys_created_by><sys_created_on>2020-02-12 18:53:39</sys_created_on><sys_id>8c18b7671b720090c83ada83cd4bcb97</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>slx.cj</sys_updated_by><sys_updated_on>2020-02-12 18:53:39</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>sys_row_error</element><list_id display_value="u_imp_tmpl_x_inch_vision_punto_kilometrico" element="NULL" name="u_imp_tmpl_x_inch_vision_punto_kilometrico" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c018b7671b720090c83ada83cd4bcb97</list_id><max_value>false</max_value><min_value>false</min_value><position>5</position><sum>false</sum><sys_created_by>slx.cj</sys_created_by><sys_created_on>2020-02-12 18:53:40</sys_created_on><sys_id>0018b7671b720090c83ada83cd4bcb98</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>slx.cj</sys_updated_by><sys_updated_on>2020-02-12 18:53:40</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>u_imp_tmpl_x_inch_vision_punto_kilometrico</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>slx.cj</sys_created_by><sys_created_on>2020-02-12 18:53:39</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c018b7671b720090c83ada83cd4bcb97</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_imp_tmpl_x_inch_vision_punto_kilometrico</sys_name><sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package><sys_policy/><sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope><sys_update_name>sys_ui_list_u_imp_tmpl_x_inch_vision_punto_kilometrico_null</sys_update_name><sys_updated_by>slx.cj</sys_updated_by><sys_updated_on>2020-02-12 18:53:39</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+        <payload_hash>-543929528</payload_hash>
+        <record_name>Imp Tmpl X Inch Vision Punto Kilometrico</record_name>
+        <reverted_from/>
+        <source>f8a46a431b6a4050c83ada83cd4bcba7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-02-12 18:54:25</sys_created_on>
+        <sys_id>4738bb671b720090c83ada83cd4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1703ac098030000001</sys_recorded_at>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-02-12 18:54:25</sys_updated_on>
+        <type>List Layout</type>
+        <update_guid>0738bb67fd72009091a681245b9f0bb2</update_guid>
+        <update_guid_history>0738bb67fd72009091a681245b9f0bb2:-543929528</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-02-12 18:54:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list">sys_ui_list</sys_db_object>
+        <sys_id>4c5a91fc988e4c7ea1beb94aacff8ee4</sys_id>
+        <sys_metadata>c018b7671b720090c83ada83cd4bcb97</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_imp_tmpl_x_inch_vision_punto_kilometrico</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_parent display_value="Imp Tmpl X Inch Vision Punto Kilometrico">0418b7671b720090c83ada83cd4bcb70</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_scope_delete display_value="">2d7faeeae838452089d4e82de17ae840</sys_scope_delete>
+        <sys_update_name>sys_ui_list_u_imp_tmpl_x_inch_vision_punto_kilometrico_null</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_u_imp_tmpl_x_inch_vision_punto_kilometrico_null">4738bb671b720090c83ada83cd4bcbb2</sys_update_version>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-02-12 18:54:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_schema_attribute_m2m">
     <sys_schema_attribute_m2m action="INSERT_OR_UPDATE">
         <attribute display_value="Encode UTF8">c00fd3c393cd4980aab1069f97373681</attribute>
-        <schema display_value="Punto Kilometrico" element="u_slx_punto_km" name="x_inch_vision_evento">06f46cd71be70410c83ada83cd4bcbd6</schema>
+        <schema display_value="Punto Kilometrico" element="u_slx_punto_km" name="x_inch_vision_evento">df062af51bc7c010c83ada83cd4bcb8c</schema>
         <sys_class_name>sys_schema_attribute_m2m</sys_class_name>
         <sys_created_by>slx.kk</sys_created_by>
         <sys_created_on>2020-02-20 16:16:33</sys_created_on>

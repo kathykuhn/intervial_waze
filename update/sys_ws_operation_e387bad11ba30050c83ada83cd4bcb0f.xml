@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>text/plain</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>cambio estado evento</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var instance = gs.getProperty('glide.servlet.uri');
+    var sys_id = request.pathParams.sys_id;
+	var evento = new GlideRecord('x_inch_vision_evento');
+    evento.get(sys_id);
+	gs.addInfoMessage('ssssssssssssssssssssssssss');
+	gs.addInfoMessage(evento.u_slx_estado);
+    evento.u_slx_estado = 2 ;
+	evento.update();
+	gs.addInfoMessage('aaaaaaaaaaaaaaaa');
+	gs.addInfoMessage(evento.u_slx_estado);
+	return 'hola';
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_inch_vision/waze2/change_state_event/{sys_id}</operation_uri>
+        <produces>text/html</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/change_state_event/{sys_id}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>slx.kk</sys_created_by>
+        <sys_created_on>2020-03-13 21:13:51</sys_created_on>
+        <sys_id>e387bad11ba30050c83ada83cd4bcb0f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>cambio estado evento</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_update_name>sys_ws_operation_e387bad11ba30050c83ada83cd4bcb0f</sys_update_name>
+        <sys_updated_by>slx.kk</sys_updated_by>
+        <sys_updated_on>2020-03-16 18:02:09</sys_updated_on>
+        <web_service_definition display_value="waze2">3f46fe111ba30050c83ada83cd4bcb0a</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
