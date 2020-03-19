@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_slx_estado" label="Estado" language="en" table="x_inch_vision_ruta">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_slx_estado</element>
+            <help/>
+            <hint/>
+            <label>Estado</label>
+            <language>en</language>
+            <name>x_inch_vision_ruta</name>
+            <plural>Estados</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>slx.mb</sys_created_by>
+            <sys_created_on>2020-01-29 14:07:43</sys_created_on>
+            <sys_id>35f46cd71be70410c83ada83cd4bcb60</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Estado</sys_name>
+            <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+            <sys_update_name>sys_documentation_x_inch_vision_ruta_u_slx_estado_en</sys_update_name>
+            <sys_updated_by>slx.mb</sys_updated_by>
+            <sys_updated_on>2020-01-29 14:07:43</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

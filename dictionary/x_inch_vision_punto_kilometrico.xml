@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Punto kilometrico" max_length="40" name="x_inch_vision_punto_kilometrico" type="collection">
+        <element label="Activo" max_length="40" name="u_slx_activo" type="boolean"/>
+        <element display="true" label="Nombre" max_length="40" name="u_slx_cadena" type="string"/>
+        <element label="Latitud" max_length="40" name="u_slx_latitud" type="string"/>
+        <element label="Longitud" max_length="40" name="u_slx_longitud" type="string"/>
+        <element label="Ruta" max_length="32" name="u_slx_ruta" reference="core_company" type="reference"/>
+        <index name="index">
+            <element name="u_slx_ruta"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_inch_vision.slx_timers_eventos</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>slx_timers_eventos</name>
+        <script><![CDATA[var slx_timers_eventos = Class.create();
+slx_timers_eventos.prototype = {
+    initialize: function() {
+    },
+
+    type: 'slx_timers_eventos'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-02-27 19:43:40</sys_created_on>
+        <sys_id>82435524db534c102f5861f74b961966</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>slx_timers_eventos</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_update_name>sys_script_include_82435524db534c102f5861f74b961966</sys_update_name>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-02-27 19:43:40</sys_updated_on>
+    </sys_script_include>
+</record_update>

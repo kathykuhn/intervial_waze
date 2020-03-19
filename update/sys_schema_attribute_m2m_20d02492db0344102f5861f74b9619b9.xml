@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_schema_attribute_m2m">
+    <sys_schema_attribute_m2m action="INSERT_OR_UPDATE">
+        <attribute display_value="Encode UTF8">c00fd3c393cd4980aab1069f97373681</attribute>
+        <schema display_value="Punto Kilometrico" element="u_slx_punto_km" name="x_inch_vision_evento">06f46cd71be70410c83ada83cd4bcbd6</schema>
+        <sys_class_name>sys_schema_attribute_m2m</sys_class_name>
+        <sys_created_by>slx.kk</sys_created_by>
+        <sys_created_on>2020-02-20 16:16:33</sys_created_on>
+        <sys_id>20d02492db0344102f5861f74b9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>false</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_update_name>sys_schema_attribute_m2m_20d02492db0344102f5861f74b9619b9</sys_update_name>
+        <sys_updated_by>slx.kk</sys_updated_by>
+        <sys_updated_on>2020-02-20 16:16:33</sys_updated_on>
+        <value>false</value>
+    </sys_schema_attribute_m2m>
+</record_update>

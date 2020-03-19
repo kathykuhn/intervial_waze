@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="DELETE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <name>x_inch_vision.slx_reload_maps</name>
+        <script><![CDATA[var x_inch_vision = x_inch_vision || {};
+
+x_inch_vision.slx_reload_maps = (function() {
+    "use strict";
+    js.log("Conexion con el servicio : Existosa! ");
+    window.alert("Warning: conexion fallida!");
+	
+    return {
+
+
+        type: "slx_reload_maps"
+    };
+})();]]></script>
+        <script_name>slx_reload_maps</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-02-24 15:08:47</sys_created_on>
+        <sys_id>0ca73c2fdbc748102f5861f74b9619e1</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>x_inch_vision.slx_reload_maps</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_update_name>sys_ui_script_0ca73c2fdbc748102f5861f74b9619e1</sys_update_name>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-02-24 15:20:43</sys_updated_on>
+        <ui_type>10</ui_type>
+        <use_scoped_format>true</use_scoped_format>
+    </sys_ui_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</application>
+        <file_path/>
+        <instance_id>436cdaecdb7217004c1ff70fbf961917</instance_id>
+        <instance_name>intervialproddev</instance_name>
+        <name>sys_ui_script_0ca73c2fdbc748102f5861f74b9619e1</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;x_inch_vision.slx_reload_maps&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var x_inch_vision = x_inch_vision || {};
+
+x_inch_vision.slx_reload_maps = (function() {
+    "use strict";
+    js.log("Conexion con el servicio : Existosa! ");
+    window.alert("Warning: conexion fallida!");
+	
+    return {
+
+
+        type: "slx_reload_maps"
+    };
+})();]]&gt;&lt;/script&gt;&lt;script_name&gt;slx_reload_maps&lt;/script_name&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;slx.cj&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-02-24 15:08:47&lt;/sys_created_on&gt;&lt;sys_id&gt;0ca73c2fdbc748102f5861f74b9619e1&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_inch_vision.slx_reload_maps&lt;/sys_name&gt;&lt;sys_package display_value="vision" source="x_inch_vision"&gt;30a46a431b6a4050c83ada83cd4bcba5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="vision"&gt;30a46a431b6a4050c83ada83cd4bcba5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_0ca73c2fdbc748102f5861f74b9619e1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;slx.cj&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-02-24 15:20:43&lt;/sys_updated_on&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;use_scoped_format&gt;true&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1746096440</payload_hash>
+        <record_name>x_inch_vision.slx_reload_maps</record_name>
+        <reverted_from/>
+        <source>f8a46a431b6a4050c83ada83cd4bcba7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-02-24 15:20:43</sys_created_on>
+        <sys_id>fd6a30efdbc748102f5861f74b961948</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17077c944250000001</sys_recorded_at>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-02-24 15:20:43</sys_updated_on>
+        <type>UI Script</type>
+        <update_guid>b56a30effcc74810ca7ac6cacd436548</update_guid>
+        <update_guid_history>b56a30effcc74810ca7ac6cacd436548:-1746096440,44f93cafc8c74810ef62f63af3e8bef5:200547230,5ec9f8af2dc748109dab7e923540d801:139450248,e819f06f05c748105d575c9ec2d4cf79:721498009,09d8b86fa8c74810e4d794dc25c0510d:-975312740,6378f46faac7481047662f7aae246249:-2083326358,5c28346ffcc7481084cf76e6b82467b1:-583602629,6bf7b82fcfc7481018c9c6f402d61b22:-2083326358,c7a73c2f5fc74810daa6fa7f2042da1e:1330446834</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-02-24 15:22:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_script">sys_ui_script</sys_db_object>
+        <sys_id>5087ce6f5cf444f09c4591d19a902ba9</sys_id>
+        <sys_metadata>0ca73c2fdbc748102f5861f74b9619e1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_inch_vision.slx_reload_maps</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_scope_delete display_value="">2d7faeeae838452089d4e82de17ae840</sys_scope_delete>
+        <sys_update_name>sys_ui_script_0ca73c2fdbc748102f5861f74b9619e1</sys_update_name>
+        <sys_update_version display_value="sys_ui_script_0ca73c2fdbc748102f5861f74b9619e1">fd6a30efdbc748102f5861f74b961948</sys_update_version>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-02-24 15:22:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

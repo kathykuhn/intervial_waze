@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_slx_padre" label="Padre" language="es" table="x_inch_vision_tipo_incidente">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_slx_padre</element>
+            <help/>
+            <hint/>
+            <label>Padre</label>
+            <language>es</language>
+            <name>x_inch_vision_tipo_incidente</name>
+            <plural>Padres</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>slx.mb</sys_created_by>
+            <sys_created_on>2020-01-29 13:53:16</sys_created_on>
+            <sys_id>570dee43dba6c0502f5861f74b96198a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Padre</sys_name>
+            <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+            <sys_update_name>sys_documentation_x_inch_vision_tipo_incidente_u_slx_padre_es</sys_update_name>
+            <sys_updated_by>slx.mb</sys_updated_by>
+            <sys_updated_on>2020-01-29 13:53:16</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

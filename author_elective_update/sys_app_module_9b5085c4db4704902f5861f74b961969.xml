@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Tipo Evento">535085c4db4704902f5861f74b961966</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_app_module/>
+        <mobile_title>Tipo Eventos</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_inch_vision_tipo_evento</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_inch_vision.tipo_evento_user</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-02-13 18:48:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>9b5085c4db4704902f5861f74b961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tipo Eventos</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_update_name>sys_app_module_9b5085c4db4704902f5861f74b961969</sys_update_name>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-02-13 18:48:02</sys_updated_on>
+        <timeline_page/>
+        <title>Tipo Eventos</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <view_on_mobile>false</view_on_mobile>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</application>
+        <file_path/>
+        <instance_id>436cdaecdb7217004c1ff70fbf961917</instance_id>
+        <instance_name>intervialproddev</instance_name>
+        <name>sys_app_module_9b5085c4db4704902f5861f74b961969</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Tipo Evento">535085c4db4704902f5861f74b961966</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_app_module/><mobile_title>Tipo Eventos</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_inch_vision_tipo_evento</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_inch_vision.tipo_evento_user</roles><survey/><survey_overwrite>true</survey_overwrite><sys_class_name>sys_app_module</sys_class_name><sys_created_by>slx.cj</sys_created_by><sys_created_on>2020-02-13 18:48:02</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>9b5085c4db4704902f5861f74b961969</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Tipo Eventos</sys_name><sys_overrides/><sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package><sys_policy/><sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope><sys_update_name>sys_app_module_9b5085c4db4704902f5861f74b961969</sys_update_name><sys_updated_by>slx.cj</sys_updated_by><sys_updated_on>2020-02-13 18:48:02</sys_updated_on><timeline_page/><title>Tipo Eventos</title><uncancelable>false</uncancelable><view_name/><view_on_mobile>false</view_on_mobile><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1286463776</payload_hash>
+        <record_name>Tipo Eventos</record_name>
+        <reverted_from/>
+        <source>f8a46a431b6a4050c83ada83cd4bcba7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-02-13 18:48:02</sys_created_on>
+        <sys_id>9f5085c4db4704902f5861f74b96196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1703fe11db20000001</sys_recorded_at>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-02-13 18:48:02</sys_updated_on>
+        <type>Module</type>
+        <update_guid>975085c4b3470490505e67dbac786f6c</update_guid>
+        <update_guid_history>975085c4b3470490505e67dbac786f6c:-1286463776</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 13-02-2020 15:51:45">ed318508db4704902f5861f74b96190a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-02-13 18:51:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>09f304694bec41d0992b367a83522440</sys_id>
+        <sys_metadata>9b5085c4db4704902f5861f74b961969</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tipo Eventos</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_scope_delete display_value="">2d7faeeae838452089d4e82de17ae840</sys_scope_delete>
+        <sys_update_name>sys_app_module_9b5085c4db4704902f5861f74b961969</sys_update_name>
+        <sys_update_version display_value="sys_app_module_9b5085c4db4704902f5861f74b961969">9f5085c4db4704902f5861f74b96196c</sys_update_version>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-02-13 18:51:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

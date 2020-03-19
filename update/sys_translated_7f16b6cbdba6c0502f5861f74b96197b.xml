@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_translated">
+    <sys_translated action="INSERT_OR_UPDATE">
+        <element>name</element>
+        <id/>
+        <label>Punto kilometrico</label>
+        <language>es</language>
+        <name>sys_ui_module</name>
+        <sys_class_name>sys_translated</sys_class_name>
+        <sys_created_by>slx.mb</sys_created_by>
+        <sys_created_on>2020-01-29 14:32:54</sys_created_on>
+        <sys_id>7f16b6cbdba6c0502f5861f74b96197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Punto kilometrico</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_update_name>sys_translated_7f16b6cbdba6c0502f5861f74b96197b</sys_update_name>
+        <sys_updated_by>slx.mb</sys_updated_by>
+        <sys_updated_on>2020-01-29 14:32:54</sys_updated_on>
+        <value>Punto kilometricos</value>
+    </sys_translated>
+</record_update>

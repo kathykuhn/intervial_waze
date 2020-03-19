@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Tipo incidente" max_length="40" name="x_inch_vision_tipo_incidente" type="collection">
+        <element label="Icono" max_length="40" name="u_slx_icono" type="user_image"/>
+        <element display="true" label="Nombre" max_length="40" name="u_slx_nombre" type="string"/>
+        <element label="Padre" max_length="32" name="u_slx_padre" reference="x_inch_vision_tipo_incidente" type="reference"/>
+        <element choice="1" label="Tipo" max_length="40" name="u_slx_tipo" type="choice">
+            <choice/>
+        </element>
+        <element label="variable_name" max_length="40" name="u_slx_variable_name" type="string"/>
+        <index name="index">
+            <element name="u_slx_padre"/>
+        </index>
+    </element>
+</database>

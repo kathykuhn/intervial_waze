@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Evento" max_length="40" name="x_inch_vision_evento" type="collection">
+        <element label="Calle" max_length="100" name="u_slx_calle" type="string"/>
+        <element label="Ciudad" max_length="40" name="u_slx_ciudad" type="string"/>
+        <element label="Confiabilidad" max_length="40" name="u_slx_confiabilidad" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Estado" max_length="40" name="u_slx_estado" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Completado" value="5"/>
+                <element inactive_on_update="false" label="Duplicado" value="4"/>
+                <element inactive_on_update="false" label="Sin Atención" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="En Atención" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Irrelevante" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element label="Fecha/hora Registrada" max_length="40" name="u_slx_fecha_hora_registrada" type="glide_date_time"/>
+        <element label="Fecha Ultima Actualizacion" max_length="40" name="u_slx_fecha_ultima_actualizacion" type="glide_date_time"/>
+        <element label="ID Evento" max_length="100" name="u_slx_id_evento" type="string"/>
+        <element label="latitud" max_length="40" name="u_slx_latitud" type="string"/>
+        <element label="Longitud" max_length="40" name="u_slx_longitud" type="string"/>
+        <element label="magvar" max_length="40" name="u_slx_orientacion" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Orientación" max_length="50" name="u_slx_orientacion_txt" type="string"/>
+        <element attributes="encode_utf8=false" label="Punto Kilometrico" max_length="32" name="u_slx_punto_km" reference="x_inch_vision_punto_kilometrico" type="reference"/>
+        <element label="Tiempo de alerta activa" max_length="40" name="u_slx_tiempo_alerta" type="glide_duration"/>
+        <element label="Tiempo en atencion" max_length="40" name="u_slx_tiempo_atendido" type="glide_duration"/>
+        <element label="Tiempo Sin atencion" max_length="40" name="u_slx_tiempo_noatendido" type="glide_duration"/>
+        <element label="Tipo" max_length="32" name="u_slx_tipo" reference="x_inch_vision_tipo_incidente" reference_qual="u_slx_padreISNOTEMPTY^EQ" reference_qual_condition="u_slx_padreISNOTEMPTY^EQ" type="reference"/>
+        <element label="Tipo Vía" max_length="40" name="u_slx_tipo_via" type="string"/>
+        <index name="index">
+            <element name="u_slx_punto_km"/>
+        </index>
+        <index name="index2">
+            <element name="u_slx_tipo"/>
+        </index>
+    </element>
+</database>

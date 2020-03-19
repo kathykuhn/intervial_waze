@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmn_map_page">
+    <cmn_map_page action="INSERT_OR_UPDATE">
+        <center_address>Santiago, Chile</center_address>
+        <center_latitude>-35.675147</center_latitude>
+        <center_longitude>-71.542969</center_longitude>
+        <controls_size>small</controls_size>
+        <initial_zoom>7</initial_zoom>
+        <name>x_inch_vision_mapa_waze</name>
+        <overview>true</overview>
+        <refresh_on_zoom>true</refresh_on_zoom>
+        <script><![CDATA[eventosActuales();
+
+function puntoskm(punto) {
+    var puntos = new GlideRecord('x_inch_vision_punto_kilometrico');
+	puntos.addQuery('sys_id',punto);
+    puntos.query();
+    if (puntos.next()) {
+        var item = map.addItem(puntos);
+        item.latitude = puntos.getValue('u_slx_latitud');
+        item.longitude = puntos.getValue('u_slx_longitud');
+        item.icon_width = "60";
+        item.icon_height = "60";
+    }
+}
+
+function eventosActuales() {
+    var instance = gs.getProperty('glide.servlet.uri');
+    var puntos = new GlideRecord('x_inch_vision_evento');
+    puntos.query();
+    while (puntos.next()) {
+        var recuadro = '';
+        recuadro += '<table style="height: 95px; width: 300px;">';
+        recuadro += '<tbody>';
+        recuadro += '<tr>';
+        recuadro += '<td style="width: 191px;">Categoría:</td>';
+        if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'MISC') {
+            recuadro += '<td style="width: 200px;">OTRO</td>';
+        } else
+        if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'CONSTRUCTION') {
+            recuadro += '<td style="width: 200px;">CONSTRUCCION</td>';
+        } else
+        if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'JAM') {
+            recuadro += '<td style="width: 200px;">TRAFICO</td>';
+        } else
+        if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'WEATHERHAZARD / HAZARD') {
+            recuadro += '<td style="width: 200px;">PELIGRO ATMOSFÉRICO / PELIGRO</td>';
+        } else
+        if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'ACCIDENT') {
+            recuadro += '<td style="width: 200px;">ACCIDENTE</td>';
+        } else
+        if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'ROAD_CLOSED') {
+            recuadro += '<td style="width: 200px;">CALLE CERRADA</td>';
+        }
+        recuadro += '<td style="width: 187px;" rowspan="4">&nbsp;</td>';
+        recuadro += '</tr>';
+        recuadro += '<tr>';
+        recuadro += '<td style="width: 191px;">Tipo Evento:</td>';
+        recuadro += '<td style="width: 200px;">' + puntos.u_slx_tipo.u_slx_nombre + '</td>';
+        recuadro += '<td style="width: 187px;" rowspan="4">&nbsp;</td>';
+        recuadro += '</tr>';
+        recuadro += '<tr>';
+        recuadro += '<td style="width: 191px;">direccion :</td>';
+        recuadro += '<td style="width: 108px;">' + puntos.u_slx_calle + '</td>';
+        recuadro += '</tr>';
+        recuadro += '<tr>';
+        recuadro += '<td style="width: 191px;">Fecha/Hora registrada:</td>';
+        recuadro += '<td style="width: 108px;">' + puntos.u_slx_fecha_hora_registrada + '</td>';
+        recuadro += '</tr>';
+        recuadro += '<tr>';
+        recuadro += '<td style="width: 191px;">Ciudad :</td>';
+        recuadro += '<td style="width: 108px;">' + puntos.u_slx_ciudad + '</td>';
+        recuadro += '</tr>';
+        recuadro += '<tr>';
+        recuadro += '<td style="width: 191px;">V&iacute;a:</td>';
+        recuadro += '<td style="width: 108px;">' + puntos.u_slx_tipo_via + '</td>';
+        recuadro += '</tr>';
+		recuadro += '<td style="width: 191px;">Punto Kilometrico</td>';
+        recuadro += '<td style="width: 108px;">' + puntos.u_slx_punto_km.u_slx_cadena + '</td>';
+        recuadro += '</tr>';
+        recuadro += '<tr>';
+        recuadro += '<td style="width: 108px;"><a href="' + instance + 'x_inch_vision_evento.do?sys_id=' + puntos.sys_id +
+            '">Ver Registro</a></td>';
+        recuadro += '</tr>';
+        recuadro += '</tbody>';
+        recuadro += '</table>';
+
+
+        var item = map.addItem(puntos);
+        item.latitude = puntos.getValue('u_slx_latitud');
+        item.longitude = puntos.getValue('u_slx_longitud');
+        item.html = recuadro;
+		
+		
+        
+
+
+        if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'MISC') {
+            item.icon = instance + "/bluepin_logo_onshoulder@3x.png";
+        } else
+        if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'CONSTRUCTION') {
+            item.icon = instance + "/bluepin_logo_construction@3x.png";
+        } else
+        if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'JAM') {
+            item.icon = instance + "/bluepin_logo_traffic@3x.png";
+        } else
+        if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'WEATHERHAZARD / HAZARD') {
+            item.icon = instance + "/bluepin_logo_hazard@3x.png";
+        } else
+        if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'ACCIDENT') {
+            item.icon = instance + "/bluepin_logo_accident@3x.png";
+        } else
+        if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'ROAD_CLOSED') {
+            item.icon = instance + "/bluepin_logo_onshoulder@3x.png";
+        }
+
+        item.icon_width = "60";
+        item.icon_height = "60";
+		puntoskm(puntos.u_slx_punto_km);
+    }
+}]]></script>
+        <show_device_location>false</show_device_location>
+        <suffix>mapa_waze</suffix>
+        <sys_class_name>cmn_map_page</sys_class_name>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-02-14 14:40:42</sys_created_on>
+        <sys_id>43315918db4744902f5861f74b9619e6</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>x_inch_vision_mapa_waze</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_update_name>cmn_map_page_43315918db4744902f5861f74b9619e6</sys_update_name>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-02-25 21:13:22</sys_updated_on>
+        <type>normal</type>
+        <type_selection>menu</type_selection>
+    </cmn_map_page>
+</record_update>

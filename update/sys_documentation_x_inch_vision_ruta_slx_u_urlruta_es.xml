@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="slx_u_urlruta" label="Url de ruta" language="es" table="x_inch_vision_ruta">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>slx_u_urlruta</element>
+            <help/>
+            <hint/>
+            <label>Url de ruta</label>
+            <language>es</language>
+            <name>x_inch_vision_ruta</name>
+            <plural>Url de rutas</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>slx.mb</sys_created_by>
+            <sys_created_on>2020-01-29 13:37:43</sys_created_on>
+            <sys_id>2779ee0fdb66c0502f5861f74b961964</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Url de ruta</sys_name>
+            <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+            <sys_update_name>sys_documentation_x_inch_vision_ruta_slx_u_urlruta_es</sys_update_name>
+            <sys_updated_by>slx.mb</sys_updated_by>
+            <sys_updated_on>2020-01-29 13:37:43</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

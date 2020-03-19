@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X Inch Vision Tipo Incidente" max_length="40" name="u_imp_tmpl_x_inch_vision_tipo_incidente" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Nombre" label="Nombre" max_length="40" name="u_nombre" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Padre" label="Padre" max_length="32" name="u_padre" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="variable_name" max_length="40" name="u_variable_name" type="string"/>
+    </element>
+</database>

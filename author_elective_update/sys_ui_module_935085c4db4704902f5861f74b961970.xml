@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application display_value="Tipo Evento">1b5085c4db4704902f5861f74b96196d</application>
+        <filter/>
+        <name>Tipo Eventos</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_inch_vision.tipo_evento_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-02-13 18:48:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>935085c4db4704902f5861f74b961970</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tipo Eventos</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_update_name>sys_ui_module_935085c4db4704902f5861f74b961970</sys_update_name>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-02-13 18:48:02</sys_updated_on>
+        <table>x_inch_vision_tipo_evento</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</application>
+        <file_path/>
+        <instance_id>436cdaecdb7217004c1ff70fbf961917</instance_id>
+        <instance_name>intervialproddev</instance_name>
+        <name>sys_ui_module_935085c4db4704902f5861f74b961970</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Tipo Evento">1b5085c4db4704902f5861f74b96196d</application><filter/><name>Tipo Eventos</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>x_inch_vision.tipo_evento_user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>slx.cj</sys_created_by><sys_created_on>2020-02-13 18:48:02</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>935085c4db4704902f5861f74b961970</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Tipo Eventos</sys_name><sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package><sys_policy/><sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope><sys_update_name>sys_ui_module_935085c4db4704902f5861f74b961970</sys_update_name><sys_updated_by>slx.cj</sys_updated_by><sys_updated_on>2020-02-13 18:48:02</sys_updated_on><table>x_inch_vision_tipo_evento</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>445444356</payload_hash>
+        <record_name>Tipo Eventos</record_name>
+        <reverted_from/>
+        <source>f8a46a431b6a4050c83ada83cd4bcba7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-02-13 18:48:02</sys_created_on>
+        <sys_id>9b5085c4db4704902f5861f74b961972</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1703fe11e1d0000001</sys_recorded_at>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-02-13 18:48:02</sys_updated_on>
+        <type>Module</type>
+        <update_guid>935085c470470490c428b0696c25cf72</update_guid>
+        <update_guid_history>935085c470470490c428b0696c25cf72:445444356</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-02-13 18:51:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>63a90e9207504410a3cd376fec33c249</sys_id>
+        <sys_metadata>935085c4db4704902f5861f74b961970</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tipo Eventos</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_scope_delete display_value="">2d7faeeae838452089d4e82de17ae840</sys_scope_delete>
+        <sys_update_name>sys_ui_module_935085c4db4704902f5861f74b961970</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_935085c4db4704902f5861f74b961970">9b5085c4db4704902f5861f74b961972</sys_update_version>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-02-13 18:51:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmn_map_page">
+    <cmn_map_page action="INSERT_OR_UPDATE">
+        <center_address>Chile</center_address>
+        <center_latitude>-35.675147</center_latitude>
+        <center_longitude>-71.542969</center_longitude>
+        <controls_size>large</controls_size>
+        <initial_zoom>8</initial_zoom>
+        <name>x_inch_vision_Mapa_Ruta_de_los_rios</name>
+        <overview>true</overview>
+        <refresh_on_zoom>true</refresh_on_zoom>
+        <script><![CDATA[//con esta propiedad se obtiene la url de la instancia de servicenow
+var instance = gs.getProperty('glide.servlet.uri');
+
+/*
+se hace un GlideRecord a la tabla de eventos y se recorren todos los eventos 
+pertenecientes a la ruta del bosque
+*/
+var puntos = new GlideRecord('x_inch_vision_evento');
+puntos.addQuery('u_slx_punto_km.u_slx_ruta=000c483bdb7d83008ddc3c9b7c961964');//sys_id de la company Ruta del Bsoque
+puntos.addQuery('u_slx_estado=1^ORu_slx_estado=3^ORu_slx_estado=2');//si el estado es (en atencion) o (sin atencion)
+puntos.query();
+while (puntos.next()) {
+	
+	//html que genera el cuadro de dialogo en el mapa con la informacion del evento
+    var recuadro = '';
+    recuadro += '<table style="height: 95px; width: 300px;">';
+    recuadro += '<tbody>';
+    recuadro += '<tr>';
+    recuadro += '<td style="width: 191px;">Tipo Evento:</td>';
+    recuadro += '<td style="width: 200px;">'+puntos.u_slx_tipo.u_slx_nombre+'</td>';
+    recuadro += '<td style="width: 187px;" rowspan="4">&nbsp;</td>';
+    recuadro += '</tr>';
+    recuadro += '<tr>';
+    recuadro += '<td style="width: 191px;">direccion :</td>';
+    recuadro += '<td style="width: 108px;">'+puntos.u_slx_calle+'</td>';
+    recuadro += '</tr>';
+    recuadro += '<tr>';
+    recuadro += '<td style="width: 191px;">Fecha/Hora registrada:</td>';
+    recuadro += '<td style="width: 108px;">'+puntos.u_slx_fecha_hora_registrada+'</td>';
+    recuadro += '</tr>';
+    recuadro += '<tr>';
+    recuadro += '<td style="width: 191px;">Ciudad :</td>';
+    recuadro += '<td style="width: 108px;">'+puntos.u_slx_ciudad+'</td>';
+    recuadro += '</tr>';
+    recuadro += '<tr>';
+    recuadro += '<td style="width: 191px;">V&iacute;a:</td>';
+    recuadro += '<td style="width: 108px;">'+puntos.u_slx_tipo_via+'</td>';
+    recuadro += '</tr>';
+	recuadro += '<tr>';
+    recuadro += '<td style="width: 108px;"><a href="'+instance +'x_inch_vision_evento.do?sys_id='+puntos.sys_id
+		+'">Ver Registro</a></td>';
+    recuadro += '</tr>';
+    recuadro += '</tbody>';
+    recuadro += '</table>';
+
+
+	//se declara el item map que marcara el mapa
+	/*
+	metodo map.addItem() agrega el objeto al mapa
+	*/
+    var item = map.addItem(puntos);
+	//se define la posicion del objeto en el mapa
+    item.latitude = puntos.getValue('u_slx_latitud');
+    item.longitude = puntos.getValue('u_slx_longitud');
+	
+	//se define el recuadro html declarado anteriormente
+    item.html = recuadro;
+
+
+	/*
+	se valida el icono que se mostrara en el mapa dependiendo del tipo de evento.
+	el icono se define con : 
+	instance + "/bluepin_logo_onshoulder@3x.png" 
+	que es igual a decir esto :
+	https://intervialproddev.service-now.com/bluepin_logo_onshoulder@3x.png
+	*/
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'MISC') {
+        item.icon = instance + "/bluepin_logo_onshoulder@3x.png";
+    }else
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'CONSTRUCTION') {
+        item.icon = instance + "/bluepin_logo_construction@3x.png";
+    }else
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'JAM') {
+        item.icon = instance + "/bluepin_logo_traffic@3x.png";
+    }else
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'WEATHERHAZARD / HAZARD') {
+        item.icon = instance + "/bluepin_logo_hazard@3x.png";
+    }else
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'ACCIDENT') {
+        item.icon = instance + "/bluepin_logo_accident@3x.png";
+    }else
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'ROAD_CLOSED') {
+        item.icon = instance + "/bluepin_logo_onshoulder@3x.png";
+    }
+
+	//se define el tamaño del icono mostrado en el mapa
+    item.icon_width = "60";
+    item.icon_height = "60";
+}]]></script>
+        <show_device_location>true</show_device_location>
+        <suffix>Mapa_Ruta_de_los_rios</suffix>
+        <sys_class_name>cmn_map_page</sys_class_name>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-02-19 17:53:39</sys_created_on>
+        <sys_id>917d23351bcbc010c83ada83cd4bcbd1</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>x_inch_vision_Mapa_Ruta_de_los_rios</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_update_name>cmn_map_page_917d23351bcbc010c83ada83cd4bcbd1</sys_update_name>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-02-28 15:33:26</sys_updated_on>
+        <type>normal</type>
+        <type_selection>menu</type_selection>
+    </cmn_map_page>
+</record_update>

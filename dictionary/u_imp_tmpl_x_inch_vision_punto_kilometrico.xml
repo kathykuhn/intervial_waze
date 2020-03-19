@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X Inch Vision Punto Kilometrico" max_length="40" name="u_imp_tmpl_x_inch_vision_punto_kilometrico" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Activo" max_length="40" name="u_activo" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Latitud" label="Latitud" max_length="40" name="u_latitud" type="string"/>
+        <element attributes="import_attribute_name=Longitud" label="Longitud" max_length="40" name="u_longitud" type="float"/>
+        <element attributes="import_attribute_name=Nombre" label="Nombre" max_length="40" name="u_nombre" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Ruta" label="Ruta" max_length="32" name="u_ruta" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys ID" max_length="40" name="u_sys_id" type="string"/>
+    </element>
+</database>
