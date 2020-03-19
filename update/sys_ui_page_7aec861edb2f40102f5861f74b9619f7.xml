@@ -5,7 +5,7 @@
 form.submit();]]></client_script>
         <description/>
         <direct>false</direct>
-        <endpoint>x_inch_vision_boton_cambia_estado.do</endpoint>
+        <endpoint>x_inch_vision_slx_boton_cambia_estado.do</endpoint>
         <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 	<g:evaluate>
@@ -21,19 +21,19 @@ form.submit();]]></client_script>
 	  <input type="hidden" name="sysparm_name" value="${nombre_mapa}" />
     </form>
 </j:jelly>]]></html>
-        <name>boton_cambia_estado</name>
+        <name>slx_boton_cambia_estado</name>
         <processing_script/>
         <sys_class_name>sys_ui_page</sys_class_name>
         <sys_created_by>slx.kk</sys_created_by>
         <sys_created_on>2020-03-16 20:43:44</sys_created_on>
         <sys_id>7aec861edb2f40102f5861f74b9619f7</sys_id>
-        <sys_mod_count>28</sys_mod_count>
-        <sys_name>boton_cambia_estado</sys_name>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>slx_boton_cambia_estado</sys_name>
         <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
         <sys_policy/>
         <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
         <sys_update_name>sys_ui_page_7aec861edb2f40102f5861f74b9619f7</sys_update_name>
         <sys_updated_by>slx.kk</sys_updated_by>
-        <sys_updated_on>2020-03-17 21:20:54</sys_updated_on>
+        <sys_updated_on>2020-03-19 17:38:47</sys_updated_on>
     </sys_ui_page>
 </record_update>

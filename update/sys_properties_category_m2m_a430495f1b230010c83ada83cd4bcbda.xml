@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="vision">9c10c55f1b230010c83ada83cd4bcbc7</category>
+        <order>1</order>
+        <property display_value="x_inch_vision.slx.ui.vision.ventana" name="x_inch_vision.slx.ui.vision.ventana">10fff05f1b230010c83ada83cd4bcbb0</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-03-19 17:38:57</sys_created_on>
+        <sys_id>a430495f1b230010c83ada83cd4bcbda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_inch_vision.slx.ui.vision.ventana.vision</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_a430495f1b230010c83ada83cd4bcbda</sys_update_name>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-03-19 17:38:57</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>
