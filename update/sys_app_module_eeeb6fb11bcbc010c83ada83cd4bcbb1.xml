@@ -15,7 +15,7 @@
         <mobile_title>Mapas de Rutas</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name/>
-        <order>10</order>
+        <order>200</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -28,15 +28,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>eeeb6fb11bcbc010c83ada83cd4bcbb1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Mapas de Rutas</sys_name>
         <sys_overrides/>
         <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
         <sys_policy/>
         <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
         <sys_update_name>sys_app_module_eeeb6fb11bcbc010c83ada83cd4bcbb1</sys_update_name>
-        <sys_updated_by>slx.cj</sys_updated_by>
-        <sys_updated_on>2020-02-19 17:50:40</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-24 05:01:07</sys_updated_on>
         <timeline_page/>
         <title>Mapas de Rutas</title>
         <uncancelable>false</uncancelable>

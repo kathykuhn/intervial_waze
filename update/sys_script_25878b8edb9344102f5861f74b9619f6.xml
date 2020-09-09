@@ -38,7 +38,7 @@
         <sys_created_by>slx.kk</sys_created_by>
         <sys_created_on>2020-03-03 20:08:17</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
+        <sys_domain_path/>
         <sys_id>25878b8edb9344102f5861f74b9619f6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>slx_set_fecha_cambio_en_atencion</sys_name>

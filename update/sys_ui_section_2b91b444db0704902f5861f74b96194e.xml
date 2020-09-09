@@ -2,236 +2,264 @@
     <sys_ui_section caption="Evento" section_id="2b91b444db0704902f5861f74b96194e" sys_domain="global" table="x_inch_vision_evento" version="3" view="">
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
-            <sys_created_by>slx.kk</sys_created_by>
-            <sys_created_on>2020-03-03 20:31:50</sys_created_on>
-            <sys_id>415e43c6dbd344102f5861f74b9619ad</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-13 18:51:49</sys_created_on>
+            <sys_id>ff904a97db4050102f5861f74b9619e6</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>slx.kk</sys_updated_by>
-            <sys_updated_on>2020-03-03 20:31:50</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-13 18:51:49</sys_updated_on>
             <text>Evento</text>
             <type display_value="Section Separator">443e806c0fd30000b12e6903cfe01281</type>
         </sys_ui_annotation>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>415e43c6dbd344102f5861f74b9619ad</element>
+            <element>ff904a97db4050102f5861f74b9619e6</element>
             <position>0</position>
-            <sys_created_by>slx.kk</sys_created_by>
-            <sys_created_on>2020-03-03 20:31:50</sys_created_on>
-            <sys_id>c55e43c6dbd344102f5861f74b9619b3</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-13 18:51:49</sys_created_on>
+            <sys_id>ff908a97db4050102f5861f74b96192a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Evento" display_value="Evento" name="x_inch_vision_evento" sys_domain="global" view="Default view">2b91b444db0704902f5861f74b96194e</sys_ui_section>
-            <sys_updated_by>slx.kk</sys_updated_by>
-            <sys_updated_on>2020-03-03 20:31:50</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-13 18:51:49</sys_updated_on>
             <sys_user/>
             <type>annotation</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_slx_tipo</element>
             <position>1</position>
-            <sys_created_by>slx.kk</sys_created_by>
-            <sys_created_on>2020-03-03 20:31:50</sys_created_on>
-            <sys_id>4d5e43c6dbd344102f5861f74b9619b3</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-13 18:51:49</sys_created_on>
+            <sys_id>73908a97db4050102f5861f74b96192b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Evento" display_value="Evento" name="x_inch_vision_evento" sys_domain="global" view="Default view">2b91b444db0704902f5861f74b96194e</sys_ui_section>
-            <sys_updated_by>slx.kk</sys_updated_by>
-            <sys_updated_on>2020-03-03 20:31:50</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-13 18:51:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.begin_split</element>
             <position>2</position>
-            <sys_created_by>slx.kk</sys_created_by>
-            <sys_created_on>2020-03-03 20:31:50</sys_created_on>
-            <sys_id>cd5e43c6dbd344102f5861f74b9619b3</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-13 18:51:49</sys_created_on>
+            <sys_id>f3908a97db4050102f5861f74b96192b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Evento" display_value="Evento" name="x_inch_vision_evento" sys_domain="global" view="Default view">2b91b444db0704902f5861f74b96194e</sys_ui_section>
-            <sys_updated_by>slx.kk</sys_updated_by>
-            <sys_updated_on>2020-03-03 20:31:50</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-13 18:51:49</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_slx_orientacion_txt</element>
             <position>3</position>
-            <sys_created_by>slx.kk</sys_created_by>
-            <sys_created_on>2020-03-03 20:31:50</sys_created_on>
-            <sys_id>415e43c6dbd344102f5861f74b9619b4</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-13 18:51:49</sys_created_on>
+            <sys_id>77908a97db4050102f5861f74b96192b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Evento" display_value="Evento" name="x_inch_vision_evento" sys_domain="global" view="Default view">2b91b444db0704902f5861f74b96194e</sys_ui_section>
-            <sys_updated_by>slx.kk</sys_updated_by>
-            <sys_updated_on>2020-03-03 20:31:50</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-13 18:51:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_slx_orientacion</element>
             <position>4</position>
-            <sys_created_by>slx.kk</sys_created_by>
-            <sys_created_on>2020-03-03 20:31:50</sys_created_on>
-            <sys_id>c15e43c6dbd344102f5861f74b9619b4</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-13 18:51:49</sys_created_on>
+            <sys_id>f7908a97db4050102f5861f74b96192b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Evento" display_value="Evento" name="x_inch_vision_evento" sys_domain="global" view="Default view">2b91b444db0704902f5861f74b96194e</sys_ui_section>
-            <sys_updated_by>slx.kk</sys_updated_by>
-            <sys_updated_on>2020-03-03 20:31:50</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-13 18:51:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_slx_calle</element>
             <position>5</position>
-            <sys_created_by>slx.kk</sys_created_by>
-            <sys_created_on>2020-03-03 20:31:50</sys_created_on>
-            <sys_id>455e43c6dbd344102f5861f74b9619b4</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-13 18:51:49</sys_created_on>
+            <sys_id>7b908a97db4050102f5861f74b96192b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Evento" display_value="Evento" name="x_inch_vision_evento" sys_domain="global" view="Default view">2b91b444db0704902f5861f74b96194e</sys_ui_section>
-            <sys_updated_by>slx.kk</sys_updated_by>
-            <sys_updated_on>2020-03-03 20:31:50</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-13 18:51:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_slx_ciudad</element>
             <position>6</position>
-            <sys_created_by>slx.kk</sys_created_by>
-            <sys_created_on>2020-03-03 20:31:50</sys_created_on>
-            <sys_id>c55e43c6dbd344102f5861f74b9619b4</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-13 18:51:49</sys_created_on>
+            <sys_id>fb908a97db4050102f5861f74b96192b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Evento" display_value="Evento" name="x_inch_vision_evento" sys_domain="global" view="Default view">2b91b444db0704902f5861f74b96194e</sys_ui_section>
-            <sys_updated_by>slx.kk</sys_updated_by>
-            <sys_updated_on>2020-03-03 20:31:50</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-13 18:51:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_slx_confiabilidad</element>
             <position>7</position>
-            <sys_created_by>slx.kk</sys_created_by>
-            <sys_created_on>2020-03-03 20:31:50</sys_created_on>
-            <sys_id>495e43c6dbd344102f5861f74b9619b4</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-13 18:51:49</sys_created_on>
+            <sys_id>7f908a97db4050102f5861f74b96192b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Evento" display_value="Evento" name="x_inch_vision_evento" sys_domain="global" view="Default view">2b91b444db0704902f5861f74b96194e</sys_ui_section>
-            <sys_updated_by>slx.kk</sys_updated_by>
-            <sys_updated_on>2020-03-03 20:31:50</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-13 18:51:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_slx_punto_km</element>
             <position>8</position>
-            <sys_created_by>slx.kk</sys_created_by>
-            <sys_created_on>2020-03-03 20:31:50</sys_created_on>
-            <sys_id>c95e43c6dbd344102f5861f74b9619b4</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-13 18:51:49</sys_created_on>
+            <sys_id>ff908a97db4050102f5861f74b96192b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Evento" display_value="Evento" name="x_inch_vision_evento" sys_domain="global" view="Default view">2b91b444db0704902f5861f74b96194e</sys_ui_section>
-            <sys_updated_by>slx.kk</sys_updated_by>
-            <sys_updated_on>2020-03-03 20:31:50</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-13 18:51:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>9</position>
-            <sys_created_by>slx.kk</sys_created_by>
-            <sys_created_on>2020-03-03 20:31:50</sys_created_on>
-            <sys_id>4d5e43c6dbd344102f5861f74b9619b4</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-13 18:51:49</sys_created_on>
+            <sys_id>73908a97db4050102f5861f74b96192c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Evento" display_value="Evento" name="x_inch_vision_evento" sys_domain="global" view="Default view">2b91b444db0704902f5861f74b96194e</sys_ui_section>
-            <sys_updated_by>slx.kk</sys_updated_by>
-            <sys_updated_on>2020-03-03 20:31:50</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-13 18:51:49</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_slx_latitud</element>
             <position>10</position>
-            <sys_created_by>slx.kk</sys_created_by>
-            <sys_created_on>2020-03-03 20:31:50</sys_created_on>
-            <sys_id>cd5e43c6dbd344102f5861f74b9619b4</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-13 18:51:49</sys_created_on>
+            <sys_id>f3908a97db4050102f5861f74b96192c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Evento" display_value="Evento" name="x_inch_vision_evento" sys_domain="global" view="Default view">2b91b444db0704902f5861f74b96194e</sys_ui_section>
-            <sys_updated_by>slx.kk</sys_updated_by>
-            <sys_updated_on>2020-03-03 20:31:50</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-13 18:51:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_slx_longitud</element>
             <position>11</position>
-            <sys_created_by>slx.kk</sys_created_by>
-            <sys_created_on>2020-03-03 20:31:50</sys_created_on>
-            <sys_id>415e43c6dbd344102f5861f74b9619b5</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-13 18:51:49</sys_created_on>
+            <sys_id>77908a97db4050102f5861f74b96192c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Evento" display_value="Evento" name="x_inch_vision_evento" sys_domain="global" view="Default view">2b91b444db0704902f5861f74b96194e</sys_ui_section>
-            <sys_updated_by>slx.kk</sys_updated_by>
-            <sys_updated_on>2020-03-03 20:31:50</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-13 18:51:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_slx_fecha_hora_registrada</element>
             <position>12</position>
-            <sys_created_by>slx.kk</sys_created_by>
-            <sys_created_on>2020-03-03 20:31:50</sys_created_on>
-            <sys_id>c15e43c6dbd344102f5861f74b9619b5</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-13 18:51:49</sys_created_on>
+            <sys_id>f7908a97db4050102f5861f74b96192c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Evento" display_value="Evento" name="x_inch_vision_evento" sys_domain="global" view="Default view">2b91b444db0704902f5861f74b96194e</sys_ui_section>
-            <sys_updated_by>slx.kk</sys_updated_by>
-            <sys_updated_on>2020-03-03 20:31:50</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-13 18:51:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_slx_tipo_via</element>
             <position>13</position>
-            <sys_created_by>slx.kk</sys_created_by>
-            <sys_created_on>2020-03-03 20:31:50</sys_created_on>
-            <sys_id>455e43c6dbd344102f5861f74b9619b5</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-13 18:51:49</sys_created_on>
+            <sys_id>7b908a97db4050102f5861f74b96192c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Evento" display_value="Evento" name="x_inch_vision_evento" sys_domain="global" view="Default view">2b91b444db0704902f5861f74b96194e</sys_ui_section>
-            <sys_updated_by>slx.kk</sys_updated_by>
-            <sys_updated_on>2020-03-03 20:31:50</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-13 18:51:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_slx_estado</element>
             <position>14</position>
-            <sys_created_by>slx.kk</sys_created_by>
-            <sys_created_on>2020-03-03 20:31:50</sys_created_on>
-            <sys_id>c55e43c6dbd344102f5861f74b9619b5</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-13 18:51:49</sys_created_on>
+            <sys_id>fb908a97db4050102f5861f74b96192c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Evento" display_value="Evento" name="x_inch_vision_evento" sys_domain="global" view="Default view">2b91b444db0704902f5861f74b96194e</sys_ui_section>
-            <sys_updated_by>slx.kk</sys_updated_by>
-            <sys_updated_on>2020-03-03 20:31:50</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-13 18:51:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_slx_fecha_cambio_en_atencion</element>
             <position>15</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-04-13 18:51:49</sys_created_on>
+            <sys_id>7f908a97db4050102f5861f74b96192c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Evento" display_value="Evento" name="x_inch_vision_evento" sys_domain="global" view="Default view">2b91b444db0704902f5861f74b96194e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-04-13 18:51:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fecha_cambio_a_cerrado</element>
+            <position>16</position>
             <sys_created_by>slx.kk</sys_created_by>
-            <sys_created_on>2020-03-03 20:31:50</sys_created_on>
-            <sys_id>495e43c6dbd344102f5861f74b9619b5</sys_id>
+            <sys_created_on>2020-08-12 18:17:53</sys_created_on>
+            <sys_id>a23185d21bee1c10c83ada83cd4bcb18</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Evento" display_value="Evento" name="x_inch_vision_evento" sys_domain="global" view="Default view">2b91b444db0704902f5861f74b96194e</sys_ui_section>
             <sys_updated_by>slx.kk</sys_updated_by>
-            <sys_updated_on>2020-03-03 20:31:50</sys_updated_on>
+            <sys_updated_on>2020-08-12 18:17:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_slx_fecha_cambio_a_cerrado</element>
+            <position>17</position>
+            <sys_created_by>slx.kk</sys_created_by>
+            <sys_created_on>2020-08-12 18:20:31</sys_created_on>
+            <sys_id>45d141161bee1c10c83ada83cd4bcba1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Evento" display_value="Evento" name="x_inch_vision_evento" sys_domain="global" view="Default view">2b91b444db0704902f5861f74b96194e</sys_ui_section>
+            <sys_updated_by>slx.kk</sys_updated_by>
+            <sys_updated_on>2020-08-12 18:20:31</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

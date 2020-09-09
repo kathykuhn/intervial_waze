@@ -8,142 +8,226 @@
         <name>x_inch_vision_Mapa_Ruta_del_Maipo</name>
         <overview>true</overview>
         <refresh_on_zoom>true</refresh_on_zoom>
-        <script><![CDATA[    //con esta propiedad se obtiene la url de la instancia de servicenow
-    var instance = gs.getProperty('glide.servlet.uri');
+        <script><![CDATA[//con esta propiedad se obtiene la url de la instancia de servicenow
+var instance = gs.getProperty('glide.servlet.uri');
 
-    /*
-    se hace un GlideRecord a la tabla de eventos y se recorren todos los eventos 
-    pertenecientes a la ruta del maipo
+/*
+se hace un GlideRecord a la tabla de eventos y se recorren todos los eventos 
+pertenecientes a la ruta del maipo
 
-    Sin Atención 1
-    En Atención	 2
-    Irrelevante	 3
-    Duplicado	 4
-    Completado	 5
-    */
-    var p = gs.getProperty('x_inch_vision.slx.ui.vision.ventana');
-    var tiempo = parseInt(p);
-    var ventana = new GlideDateTime();
-    ventana.addSeconds(-tiempo);
+Sin Atención 1
+En Atención	 2
+Irrelevante	 3
+Duplicado	 4
+Completado	 5
+*/
+var p = gs.getProperty('slx.ui.vision.ventana');
+var tiempo = parseInt(p);
+var ventana = new GlideDateTime();
+ventana.addSeconds(-tiempo);
+var problemas_clima = ["Monzones/Vientos fuertes","Huracan","Lluvia Fuerte","Inundacion","Ola de Calor","Aguanieve","Neblina","Granizos","Hielo en pista","Peligro por clima","Tornado","Nieve"];
 
-    var puntos = new GlideRecord('x_inch_vision_evento');
-    puntos.addQuery('u_slx_punto_km.u_slx_ruta', '6cdb483bdb7d83008ddc3c9b7c961947'); //sys_id de la company Ruta del maipo
-    puntos.addQuery('u_slx_estado', 'IN', '1,2'); //si el estado es (en atencion) o (sin atencion)
-    puntos.addQuery('sys_updated_on', '>', ventana);
-    puntos.query();
+var puntos = new GlideRecord('x_inch_vision_evento');
+puntos.addQuery('u_slx_punto_km.u_slx_ruta', '6cdb483bdb7d83008ddc3c9b7c961947'); //sys_id de la company Ruta del maipo
+puntos.addQuery('u_slx_estado', 'IN', '1,2'); //si el estado es (en atencion) o (sin atencion)
+puntos.addQuery('sys_updated_on', '>', ventana);
+puntos.query();
 
-    while (puntos.next()) {
-
-        //html que genera el cuadro de dialogo en el mapa con la informacion del evento
-        var recuadro = '';
-        recuadro += '<table style="height: 150px; width: 320px;">';
-        recuadro += '<tbody>';
-        recuadro += '<tr>';
-        recuadro += '<td >Tipo Evento:</td>';
-        recuadro += '<td >' + puntos.u_slx_tipo.u_slx_nombre + '</td>';
-        recuadro += '</tr>';
-        recuadro += '<tr>';
-        recuadro += '<td >Orientación:</td>';
-        recuadro += '<td >' + puntos.u_slx_orientacion_txt + '</td>';
-        recuadro += '</tr>';
-        recuadro += '<tr>';
-        recuadro += '<td >Estado:</td>';
-        recuadro += '<td >' + puntos.getDisplayValue('u_slx_estado') + '</td>';
-        recuadro += '</tr>';
-        recuadro += '<tr>';
-        recuadro += '<td >direccion :</td>';
-        recuadro += '<td >' + puntos.u_slx_calle + '</td>';
-        recuadro += '</tr>';
-        recuadro += '<tr>';
-        recuadro += '<td >Fecha/Hora registrada:</td>';
-        recuadro += '<td >' + puntos.u_slx_fecha_hora_registrada + '</td>';
-        recuadro += '</tr>';
-        recuadro += '<tr>';
-        recuadro += '<td >Ciudad :</td>';
-        recuadro += '<td >' + puntos.u_slx_ciudad + '</td>';
-        recuadro += '</tr>';
-        recuadro += '<tr>';
-        recuadro += '<td >V&iacute;a:</td>';
-        recuadro += '<td >' + puntos.u_slx_tipo_via + '</td>';
-        recuadro += '</tr>';
-        recuadro += '<tr>';
-        recuadro += '<td colspan="2" ><a href="' + instance + 'x_inch_vision_evento.do?sys_id=' + puntos.sys_id + '">Ver Registro</a></td>';
-        recuadro += '</tr>';
-		recuadro += '<tr>';
-		recuadro += '<td colspan="2" >Cambiar estado:</td>';
-		recuadro += '</tr>';
-        recuadro += '<tr>';
-		recuadro += '<td colspan="2">';
-		// Si el estado no es En Atencion
-		if (puntos.u_slx_estado != 2) {
-        recuadro += '<button onclick="window.location.href =\'' + instance + '/x_inch_vision_slx_boton_cambia_estado.do?sysparm_id=' + puntos.sys_id + '&estado_id=2&nombre_mapa=x_inch_vision_Mapa_Ruta_del_Maipo\'">Atender</button>';
-		}	
-		// Si el estado no es Irrelevante
-		if (puntos.u_slx_estado != 3) {
-		recuadro += ' &nbsp; <button onclick="window.location.href =\'' + instance + '/x_inch_vision_slx_boton_cambia_estado.do?sysparm_id=' + puntos.sys_id + '&estado_id=3&nombre_mapa=x_inch_vision_Mapa_Ruta_del_Maipo\'">Irrelevante</button>';
-		recuadro += '</td>';
+while (puntos.next()) {
+    //html que genera el cuadro de dialogo en el mapa con la informacion del evento
+    var recuadro = '';
+    recuadro += '<table style="height: 150px; width: 320px;">';
+    recuadro += '<tbody>';
+    recuadro += '<tr>';
+    recuadro += '<td >Tipo Evento:</td>';
+    recuadro += '<td >' + puntos.u_slx_tipo.u_slx_nombre + '</td>';
+    recuadro += '</tr>';
+    recuadro += '<tr>';
+    recuadro += '<td >Orientación:</td>';
+    recuadro += '<td >' + puntos.u_slx_orientacion_txt + '</td>';
+    recuadro += '</tr>';
+    recuadro += '<tr>';
+    recuadro += '<td >Estado:</td>';
+    recuadro += '<td >' + puntos.getDisplayValue('u_slx_estado') + '</td>';
+    recuadro += '</tr>';
+    recuadro += '<tr>';
+    recuadro += '<td >direccion :</td>';
+    recuadro += '<td >' + puntos.u_slx_calle + '</td>';
+    recuadro += '</tr>';
+    recuadro += '<tr>';
+    recuadro += '<td >Fecha/Hora registrada:</td>';
+    recuadro += '<td >' + puntos.getDisplayValue('u_slx_fecha_hora_registrada') + '</td>';
+    recuadro += '</tr>';
+    recuadro += '<tr>';
+    recuadro += '<td >Ciudad :</td>';
+    recuadro += '<td >' + puntos.u_slx_ciudad + '</td>';
+    recuadro += '</tr>';
+    recuadro += '<tr>';
+    recuadro += '<td >V&iacute;a:</td>';
+    recuadro += '<td >' + puntos.u_slx_tipo_via + '</td>';
+    recuadro += '</tr>';
+    recuadro += '<tr>';
+    recuadro += '<td colspan="2" ><a href="' + instance + 'x_inch_vision_evento.do?sys_id=' + puntos.sys_id + '">Ver Registro</a></td>';
+    recuadro += '</tr>';
+    recuadro += '<tr>';
+    recuadro += '<td colspan="2" >Cambiar estado:</td>';
+    recuadro += '</tr>';
+    recuadro += '<tr>';
+    recuadro += '<td colspan="2">';
+    // Si el estado no es En Atencion
+    if (puntos.u_slx_estado != 2) {
+        recuadro += '<button onclick="window.location.href =\'' + instance + '/x_inch_vision_slx_boton_cambia_estado.do?sysparm_id=' + puntos.sys_id + '&estado_id=2&nombre_mapa=x_inch_vision_Mapa_Ruta_del_Maipo\'">En Atenci&oacute;n</button>';
+    }
+    // Si el estado no es Irrelevante
+    if (puntos.u_slx_estado != 3) {
+        recuadro += ' &nbsp; <button onclick="window.location.href =\'' + instance + '/x_inch_vision_slx_boton_cambia_estado.do?sysparm_id=' + puntos.sys_id + '&estado_id=3&nombre_mapa=x_inch_vision_Mapa_Ruta_del_Maipo\'">Irrelevante</button>';
+        recuadro += '</td>';
         recuadro += '</tr>';
         recuadro += '</tbody>';
         recuadro += '</table>';
-        }
-        //se declara el item map que marcara el mapa
-        /*
-        metodo map.addItem() agrega el objeto al mapa
-        */
-        var item = map.addItem(puntos);
-        //se define la posicion del objeto en el mapa
-        item.latitude = puntos.getValue('u_slx_latitud');
-        item.longitude = puntos.getValue('u_slx_longitud');
-
-        //se define el recuadro html declarado anteriormente
-        item.html = recuadro;
-
-
-        /*
-        se valida el icono que se mostrara en el mapa dependiendo del tipo de evento.
-        el icono se define con : 
-        instance + "/bluepin_logo_onshoulder@3x.png" 
-        que es igual a decir esto :
-        https://intervialproddev.service-now.com/bluepin_logo_onshoulder@3x.png
-        */
-        if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'MISC') {
-            item.icon = instance + "/bluepin_logo_onshoulder@3x.png";
-        } else
-        if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'CONSTRUCTION') {
-            item.icon = instance + "/bluepin_logo_construction@3x.png";
-        } else
-        if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'JAM') {
-            item.icon = instance + "/bluepin_logo_traffic@3x.png";
-        } else
-        if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'WEATHERHAZARD / HAZARD') {
-            item.icon = instance + "/bluepin_logo_hazard@3x.png";
-        } else
-        if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'ACCIDENT') {
-            item.icon = instance + "/bluepin_logo_accident@3x.png";
-        } else
-        if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'ROAD_CLOSED') {
-            item.icon = instance + "/bluepin_logo_onshoulder@3x.png";
-        }
-
-        //se define el tamaño del icono mostrado en el mapa
-        item.icon_width = "60";
-        item.icon_height = "60";
     }
-]]></script>
+    //se declara el item map que marcara el mapa
+    /*
+    metodo map.addItem() agrega el objeto al mapa
+    */
+    var item = map.addItem(puntos);
+    //se define la posicion del objeto en el mapa
+    item.latitude = puntos.getValue('u_slx_latitud');
+    item.longitude = puntos.getValue('u_slx_longitud');
+
+    //se define el recuadro html declarado anteriormente
+    item.html = recuadro;
+
+
+    /*
+    se valida el icono que se mostrara en el mapa dependiendo del tipo de evento.
+    el icono se define con : 
+    instance + "/bluepin_logo_onshoulder@3x.png" 
+    que es igual a decir esto :
+    https://intervialproddev.service-now.com/bluepin_logo_onshoulder@3x.png
+    */
+	
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'MISC') {
+        if (puntos.u_slx_estado == 2) {
+            item.icon = instance + "/peligro-ruta-icono-1.png";
+        } else {
+            item.icon = instance + "/peligro-ruta-icono-2.png";
+        }
+    } else
+    if (puntos.u_slx_tipo.u_slx_nombre == 'Construccion') {
+        if (puntos.u_slx_estado == 2) {
+            item.icon = instance + "/construccion-icono-1.png";
+        } else {
+            item.icon = instance + "/construccion-icono-2.png";
+        }
+    } else
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'JAM') {
+        if (puntos.u_slx_tipo.u_slx_nombre == 'Trafico Detenido') {
+            if (puntos.u_slx_estado == 2) {
+                item.icon = instance + "/trafico-detenido-icono-1.png";
+            } else {
+                item.icon = instance + "/trafico-detenido-icono-2.png";
+            }
+        } else {
+            if (puntos.u_slx_estado == 2) {
+                item.icon = instance + "/trafico-denso-icono-1.png";
+            } else {
+                item.icon = instance + "/trafico-denso-icono-2.png";
+            }
+        }
+    } else
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'WEATHERHAZARD / HAZARD') {
+        if (puntos.u_slx_tipo.u_slx_nombre == 'Animales al costado') {
+            if (puntos.u_slx_estado == 2) {
+                item.icon = instance + "/animal-costado-icono-1.png";
+            } else {
+                item.icon = instance + "/animal-costado-icono-2.png";
+            }
+        } else if (puntos.u_slx_tipo.u_slx_nombre == 'Animal muerto en ruta') {
+            if (puntos.u_slx_estado == 2) {
+                item.icon = instance + "/animal-muerto-icono-1.png";
+            } else {
+                item.icon = instance + "/animal-muerto-icono-2.png";
+            }			
+        } else if (puntos.u_slx_tipo.u_slx_nombre == 'Bache en ruta') {
+            if (puntos.u_slx_estado == 2) {
+                item.icon = instance + "/bache-ruta-icono-1.png";
+            } else {
+                item.icon = instance + "/bache-ruta-icono-2.png";
+            }
+        } else if (puntos.u_slx_tipo.u_slx_nombre == 'Objeto en ruta') {
+            if (puntos.u_slx_estado == 2) {
+                item.icon = instance + "/objeto-ruta-icono-1.png";
+            } else {
+                item.icon = instance + "/objeto-ruta-icono-2.png";
+            }			
+        } else if (puntos.u_slx_tipo.u_slx_nombre == 'Peligro al costado' || puntos.u_slx_tipo.u_slx_nombre == 'Vehiculo detenido al costado' ) {
+            if (puntos.u_slx_estado == 2) {
+                item.icon = instance + "/peligro-costado-icono-1.png";
+            } else {
+                item.icon = instance + "/peligro-costado-icono-2.png";
+            }			
+        } else if (puntos.u_slx_tipo.u_slx_nombre == 'Pista Cerrada') {
+            if (puntos.u_slx_estado == 2) {
+                item.icon = instance + "/pista-cerrada-icono-1.png";
+            } else {
+                item.icon = instance + "/pista-cerrada-icono-2.png";
+            }		
+        } else if ( problemas_clima.indexOf(String(puntos.u_slx_tipo.u_slx_nombre))>-1 ) {
+            if (puntos.u_slx_estado == 2) {
+                item.icon = instance + "/peligro-clima-icono-1.png";
+            } else {
+                item.icon = instance + "/peligro-clima-icono-2.png";
+            }						
+		} else {
+            if (puntos.u_slx_estado == 2) {
+                item.icon = instance + "/peligro-ruta-icono-1.png";
+            } else {
+                item.icon = instance + "/peligro-ruta-icono-2.png";
+            }
+        }
+    } else
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'ACCIDENT') {
+        if (puntos.u_slx_estado == 2) {
+            item.icon = instance + "/accidente-menor-icono-1.png";
+        } else {
+            item.icon = instance + "/accidente-menor-icono-2.png";
+        }
+    } else
+    if (puntos.u_slx_tipo.u_slx_padre.u_slx_nombre == 'ROAD_CLOSED') {
+        if (puntos.u_slx_tipo.u_slx_nombre == 'Calle Cerrada por construcción') {
+            if (puntos.u_slx_estado == 2) {
+                item.icon = instance + "/calle-cerrada-construcción-icono-1.png";
+            } else {
+                item.icon = instance + "/calle-cerrada-construcción-icono-2.png";
+            }
+        } else {
+            if (puntos.u_slx_estado == 2) {
+                item.icon = instance + "/pista-cerrada-icono-1.png";
+            } else {
+                item.icon = instance + "/pista-cerrada-icono-2.png";
+            }
+        }
+	}
+
+    //se define el tamaño del icono mostrado en el mapa
+    item.icon_width = "50";
+    item.icon_height = "60";
+}]]></script>
         <show_device_location>true</show_device_location>
         <suffix>Mapa_Ruta_del_Maipo</suffix>
         <sys_class_name>cmn_map_page</sys_class_name>
         <sys_created_by>slx.cj</sys_created_by>
         <sys_created_on>2020-02-19 13:30:40</sys_created_on>
         <sys_id>d7d0f2b11b0bc010c83ada83cd4bcbd3</sys_id>
-        <sys_mod_count>205</sys_mod_count>
+        <sys_mod_count>237</sys_mod_count>
         <sys_name>x_inch_vision_Mapa_Ruta_del_Maipo</sys_name>
         <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
         <sys_policy/>
         <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
         <sys_update_name>cmn_map_page_d7d0f2b11b0bc010c83ada83cd4bcbd3</sys_update_name>
-        <sys_updated_by>slx.cj</sys_updated_by>
-        <sys_updated_on>2020-03-19 17:40:38</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-21 21:54:58</sys_updated_on>
         <type>normal</type>
         <type_selection>menu</type_selection>
     </cmn_map_page>

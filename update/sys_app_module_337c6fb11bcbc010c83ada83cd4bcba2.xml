@@ -15,11 +15,11 @@
         <mobile_title>Ruta de los Rios</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name/>
-        <order>13</order>
+        <order>700</order>
         <override_menu_roles>false</override_menu_roles>
         <query>map_page.do?sysparm_name=x_inch_vision_Mapa_Ruta_de_los_rios</query>
         <report/>
-        <roles/>
+        <roles>x_inch_vision.administrador,x_inch_vision.usuario</roles>
         <survey/>
         <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
@@ -28,15 +28,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>337c6fb11bcbc010c83ada83cd4bcba2</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Ruta de los Rios</sys_name>
         <sys_overrides/>
         <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
         <sys_policy/>
         <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
         <sys_update_name>sys_app_module_337c6fb11bcbc010c83ada83cd4bcba2</sys_update_name>
-        <sys_updated_by>slx.kk</sys_updated_by>
-        <sys_updated_on>2020-03-18 14:06:07</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-24 05:01:42</sys_updated_on>
         <timeline_page/>
         <title>Ruta de los Rios</title>
         <uncancelable>false</uncancelable>

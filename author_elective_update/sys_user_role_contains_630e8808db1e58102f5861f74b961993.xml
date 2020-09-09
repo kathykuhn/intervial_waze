@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="DELETE">
+        <contains display_value="x_inch_vision.punto_kilometrico_user" name="x_inch_vision.punto_kilometrico_user">a8ee26c3dba6c0502f5861f74b96192a</contains>
+        <role display_value="x_inch_vision.administrador" name="x_inch_vision.administrador">c03c8084db1e58102f5861f74b961963</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-24 04:32:17</sys_created_on>
+        <sys_id>630e8808db1e58102f5861f74b961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_inch_vision.punto_kilometrico_user.x_inch_vision.administrador</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_update_name>sys_user_role_contains_630e8808db1e58102f5861f74b961993</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-24 04:32:17</sys_updated_on>
+    </sys_user_role_contains>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</application>
+        <file_path/>
+        <instance_id>436cdaecdb7217004c1ff70fbf961917</instance_id>
+        <instance_name>intervialproddev</instance_name>
+        <name>sys_user_role_contains_630e8808db1e58102f5861f74b961993</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains"><sys_user_role_contains action="INSERT_OR_UPDATE"><contains display_value="x_inch_vision.punto_kilometrico_user" name="x_inch_vision.punto_kilometrico_user">a8ee26c3dba6c0502f5861f74b96192a</contains><role display_value="x_inch_vision.administrador" name="x_inch_vision.administrador">c03c8084db1e58102f5861f74b961963</role><sys_class_name>sys_user_role_contains</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-07-24 04:32:17</sys_created_on><sys_id>630e8808db1e58102f5861f74b961993</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_inch_vision.punto_kilometrico_user.x_inch_vision.administrador</sys_name><sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package><sys_policy/><sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope><sys_update_name>sys_user_role_contains_630e8808db1e58102f5861f74b961993</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-07-24 04:32:17</sys_updated_on></sys_user_role_contains></record_update>]]></payload>
+        <payload_hash>-1945111528</payload_hash>
+        <record_name>x_inch_vision.punto_kilometrico_user.x_inch_vision.administrador</record_name>
+        <reverted_from/>
+        <source>f8a46a431b6a4050c83ada83cd4bcba7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-24 04:32:17</sys_created_on>
+        <sys_id>ef0e8808db1e58102f5861f74b961995</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1737f17dd6c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-24 04:32:17</sys_updated_on>
+        <type>Contained Role</type>
+        <update_guid>e70e8808a01e5810f1bd35c4516f4895</update_guid>
+        <update_guid_history>e70e8808a01e5810f1bd35c4516f4895:-1945111528</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-24 04:53:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role_contains">sys_user_role_contains</sys_db_object>
+        <sys_id>38e7a39abe7747c8b284c9aba1e90c40</sys_id>
+        <sys_metadata>630e8808db1e58102f5861f74b961993</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_inch_vision.punto_kilometrico_user.x_inch_vision.administrador</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_scope_delete display_value="">2d7faeeae838452089d4e82de17ae840</sys_scope_delete>
+        <sys_update_name>sys_user_role_contains_630e8808db1e58102f5861f74b961993</sys_update_name>
+        <sys_update_version display_value="sys_user_role_contains_630e8808db1e58102f5861f74b961993">ef0e8808db1e58102f5861f74b961995</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-24 04:53:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

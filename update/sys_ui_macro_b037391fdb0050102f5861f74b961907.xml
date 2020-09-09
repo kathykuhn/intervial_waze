@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description>Despliega nueva ventana vinculada a la ubicación del evento.</description>
+        <media_type/>
+        <name>slx_googlemaps_url</name>
+        <scoped_name>x_inch_vision_slx_googlemaps_url</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-13 18:12:40</sys_created_on>
+        <sys_id>b037391fdb0050102f5861f74b961907</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>slx_googlemaps_url</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_update_name>sys_ui_macro_b037391fdb0050102f5861f74b961907</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-13 18:12:40</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<a href="https://maps.google.es/?q=loc:$[current.u_slx_latitud] $[current.u_slx_longitud]" rel="nofollow" target ="_blank">Ver Mapa</a>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

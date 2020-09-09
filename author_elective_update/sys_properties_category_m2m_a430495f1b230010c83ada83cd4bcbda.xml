@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="DELETE">
+        <category display_value="vision">9c10c55f1b230010c83ada83cd4bcbc7</category>
+        <order>1</order>
+        <property display_value="x_inch_vision.slx.ui.vision.ventana" name="x_inch_vision.slx.ui.vision.ventana">10fff05f1b230010c83ada83cd4bcbb0</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-03-19 17:38:57</sys_created_on>
+        <sys_id>a430495f1b230010c83ada83cd4bcbda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_inch_vision.slx.ui.vision.ventana.vision</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_a430495f1b230010c83ada83cd4bcbda</sys_update_name>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-03-19 17:38:57</sys_updated_on>
+    </sys_properties_category_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</application>
+        <file_path/>
+        <instance_id>436cdaecdb7217004c1ff70fbf961917</instance_id>
+        <instance_name>intervialproddev</instance_name>
+        <name>sys_properties_category_m2m_a430495f1b230010c83ada83cd4bcbda</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="vision">9c10c55f1b230010c83ada83cd4bcbc7</category><order>1</order><property display_value="x_inch_vision.slx.ui.vision.ventana" name="x_inch_vision.slx.ui.vision.ventana">10fff05f1b230010c83ada83cd4bcbb0</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>slx.cj</sys_created_by><sys_created_on>2020-03-19 17:38:57</sys_created_on><sys_id>a430495f1b230010c83ada83cd4bcbda</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_inch_vision.slx.ui.vision.ventana.vision</sys_name><sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package><sys_policy/><sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope><sys_update_name>sys_properties_category_m2m_a430495f1b230010c83ada83cd4bcbda</sys_update_name><sys_updated_by>slx.cj</sys_updated_by><sys_updated_on>2020-03-19 17:38:57</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+        <payload_hash>-1517449629</payload_hash>
+        <record_name>x_inch_vision.slx.ui.vision.ventana.vision</record_name>
+        <reverted_from/>
+        <source>f8a46a431b6a4050c83ada83cd4bcba7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>slx.cj</sys_created_by>
+        <sys_created_on>2020-03-19 17:38:57</sys_created_on>
+        <sys_id>b830495f1b230010c83ada83cd4bcbdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>170f3e071cf0000001</sys_recorded_at>
+        <sys_updated_by>slx.cj</sys_updated_by>
+        <sys_updated_on>2020-03-19 17:38:57</sys_updated_on>
+        <type>Category Property</type>
+        <update_guid>b030495f54230010bcdcbaca4fa194dc</update_guid>
+        <update_guid_history>b030495f54230010bcdcbaca4fa194dc:-1517449629</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-21 21:56:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties_category_m2m">sys_properties_category_m2m</sys_db_object>
+        <sys_id>c9ee26bbb06b4890a429d3a3f6af63a4</sys_id>
+        <sys_metadata>a430495f1b230010c83ada83cd4bcbda</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_inch_vision.slx.ui.vision.ventana.vision</sys_name>
+        <sys_package display_value="vision" source="x_inch_vision">30a46a431b6a4050c83ada83cd4bcba5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="vision">30a46a431b6a4050c83ada83cd4bcba5</sys_scope>
+        <sys_scope_delete display_value="">2d7faeeae838452089d4e82de17ae840</sys_scope_delete>
+        <sys_update_name>sys_properties_category_m2m_a430495f1b230010c83ada83cd4bcbda</sys_update_name>
+        <sys_update_version display_value="sys_properties_category_m2m_a430495f1b230010c83ada83cd4bcbda">b830495f1b230010c83ada83cd4bcbdc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-21 21:56:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
